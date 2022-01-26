@@ -1,0 +1,48 @@
+.container{
+    margin:0 40px 20px 20px;
+    height: fit-content;
+    width: fit-content;
+    background: white;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    /* top: 130%; */
+    padding: 2%;
+    /* border: solid 2px; */
+    /* overflow: hidden; */
+}
+.circular-progress{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background: orange;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.circular-progress::before{
+    content:"";
+    position: absolute;
+    height: 87%;
+    width: 87%;
+    background: white;
+    border-radius: 50%;
+    /* z-index: 20; */
+    display: grid;
+    place-items: center;
+}
+p {
+    z-index: 30;
+    position: relative;
+    font-size: 20px;
+    border: 2px solid green;
+    font-family: "poppins",sans-serif;
+    font-weight:bold;
+}
+.skill_elements{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border: 2px solid green;
+    margin-top: 40px;
+}

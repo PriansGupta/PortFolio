@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  scroll-behavior: smooth;
+}
+/* 303438 */
+body {
+  margin: 0;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.Intro_sec{
+  width: 100%;
+  height: 700px;
+  background-image: url('./Assets/Intro_BackG.jpg');
+  background-size: cover;
+  background-attachment:fixed;
+  background-position-x:200px;
+  background-position-y:20px;
+  z-index: -20;
+    border: 2px solid green;
+    position: relative;
+}
+.skills{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: grey; */
+  height: 200px;
+    border: 2px solid green;
+    margin-top: 10%;
+  height: fit-content;
+  box-shadow: 20px 20px 40px 20px rgba(60, 60, 150,0.25);
+  border-radius: 8px;
+  position: absolute;
+  left: 20%;
+}
+.skill_heading{
+  font-size: 3rem;
+  position: absolute;
+    border: 2px solid green;
+    left: 45%;
+  font-family: 'Abril Fatface';
+
+}
+.skill_meters{
+    border: 2px solid green;
+    margin-top: 20%;
+}
+.about_me{
+  position: relative;
+  display: flex;
+    border: 2px solid green;
+    flex-direction: row;
+  width: 100%;
+  height: 600px;
+  background:url('./Assets/Web.jpg') ;
+  background-size: cover;
+  box-shadow: 20px 20px 40px 20px rgba(60, 60, 150,0.25);
+  z-index: -100;
+  margin-top: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+.about_heading {
+  font-family: 'Abril Fatface';
+  font-size: 4rem;
+    border: 2px solid green;
+    z-index: 1;
+  transform: translateX(250px);
+  color: rgb(157, 255, 0);
+  letter-spacing: 2px;
+  
+}
+.contact_me{
+    border: 2px solid green;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  margin-top: 50px;
+  z-index: -20;
+    border: 2px solid green;
+    position: relative;
+  width: 100%;
+  height: 50px;
+  background: rgb(44, 44, 44);
+  border-radius: 8px 8px 0px 0px;
+}
+.lower_foot{
+  width: 100%;
+  height: 50px;
+    border: 2px solid green;
+    background: #60DCE5;
+  position: absolute;
+  bottom: 0;
+}
+@media all  and (min-width:200px) and (max-width:300px)
+{
+  .Intro_sec{
+    width: 100%;
+    height: 310px;
+    background-image: url('./Assets/Intro_BackG.jpg');
+    background-size: cover;
+    background-attachment:fixed;
+  }
+}

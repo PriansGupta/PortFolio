@@ -1,0 +1,18 @@
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 4px 5px 5px gray;
+    height: 22%;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 0px 0px 15px 15px;
+    position: fixed;
+    z-index: 100;
+    background: white;
+    border: 2px solid green;
+    transition: 0.5s;
+}
+.heightDec{
+    height: 20%;
+}
