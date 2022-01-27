@@ -44,22 +44,23 @@
         left: 6%;
         position: absolute;
         border-radius: 8px;
-        width: 60%;
-        height: 8%;
+        width: 70%;
+        height: 13%;
         display: flex;
         flex-direction: row;
         top: 6%;
         background: transparent;
         margin-top: 0;
+        box-shadow: none;
     }
     .icon_1 .link {
-        font-size: 30px;
+        font-size: 40px;
     }
     .icon_2 .link {
-        font-size: 30px;
+        font-size: 40px;
         color: white;
     }
     .icon_3 .link {
-        font-size: 30px;
+        font-size: 40px;
     }
 }

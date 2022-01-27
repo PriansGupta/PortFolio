@@ -23,3 +23,16 @@
     /* border: 2px solid green; */
     color: white;
 }
+
+@media all  and (min-width:200px) and (max-width:300px)
+{
+    .chat {
+        bottom: 15%;
+        left: 3%;
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .chat a {
+        font-size: 30px;
+    }
+}

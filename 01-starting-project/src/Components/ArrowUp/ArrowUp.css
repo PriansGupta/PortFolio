@@ -21,3 +21,14 @@
     border: 2px solid green;
     color:red;
 }
+@media all  and (min-width:200px) and (max-width:300px)
+{
+    .arrowup {
+        bottom: 15%;
+        right: 3%;
+        font-size: 100%;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+}

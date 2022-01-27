@@ -16,3 +16,12 @@
 .heightDec{
     height: 20%;
 }
+@media all  and (min-width:200px) and (max-width:300px)
+{
+    .Header {
+        height: 12%;
+        width: 100%;
+        border-radius: 15px 15px 0px 0px;
+        bottom: 0%;
+    }
+}

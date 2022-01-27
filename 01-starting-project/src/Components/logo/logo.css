@@ -58,3 +58,35 @@
     transform: translateX(190%);
     margin-top: 1%;
 }
+@media all  and (min-width:200px) and (max-width:300px)
+{
+    .logo_container {
+        position: fixed;
+        left: 22%;
+        width: 54%;
+        height: 15%;
+    }
+    .circle {
+        position: fixed;
+        bottom: 1%;
+        left: 21%;
+        height: 30px;
+        width: 30px;
+    }
+    .name {
+        position: relative;
+        bottom: 18%;
+        height: fit-content;
+    }
+    .logo_name {
+        font-size: 21px;
+        letter-spacing: 5px;
+        margin: 0%;
+    }
+    .triangle {
+        width: 22px;
+        height: 24px;
+        margin-top: 1px;
+        position: relative;
+    }
+}
