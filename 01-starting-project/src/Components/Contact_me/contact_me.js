@@ -4,7 +4,7 @@ import { Fragment } from "react/cjs/react.production.min";
 import Method from "../ContactME/methods";
 import './contact_me.css';
 
-const Contact_me=()=>{
+const Contact_Me=()=>{
 
     return(
         <Fragment>
@@ -33,4 +33,4 @@ const Contact_me=()=>{
     );
 }
 
-export default Contact_me;
+export default Contact_Me;

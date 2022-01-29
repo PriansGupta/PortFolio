@@ -61,6 +61,7 @@
 @media all  and (min-width:200px) and (max-width:300px)
 {
     .logo_container {
+        display: none;
         position: fixed;
         left: 22%;
         width: 54%;

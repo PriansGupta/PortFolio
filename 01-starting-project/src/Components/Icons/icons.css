@@ -12,6 +12,7 @@
     align-items: center;
     margin-top: 14%;
     transform: 1s ease;
+    z-index: 1;
     border: 2px solid green;
     background: white;
 }

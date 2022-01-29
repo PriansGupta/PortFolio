@@ -4,7 +4,7 @@ import User from '../../Assets/User_Prians.png'
 import './about_2.css';
 
 
-const About_2=()=>{
+const About=()=>{
 
     const clicked=()=>{
         console.log("clicked");
@@ -32,4 +32,4 @@ const About_2=()=>{
     );
 };
 
-export default About_2;
+export default About;

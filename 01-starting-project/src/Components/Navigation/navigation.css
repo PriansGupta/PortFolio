@@ -11,12 +11,12 @@
     align-items: center;
     transition: 0.5s ease;
     overflow: hidden;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     flex-direction: row;
 }
 .shrink{
     width: 70px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 70px;
     background: #5ED9BC;
 }
@@ -31,7 +31,7 @@
     justify-content: center;
     align-items: center;
     transition: 0.7s;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     cursor: pointer;
 }
 .icon_slider{
@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     /* color: #5ED9BC; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     font-size: 200%;
 }
 .menu_options{
@@ -49,7 +49,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     align-items: center;
     overflow:hidden;
     transition: 0.5s;
@@ -60,7 +60,7 @@
 .menu_options ul{
     display: flex;
     flex-direction: row;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     justify-content: space-evenly;
     list-style: none;
     /* margin: 0px 40px 0px 0px; */
@@ -69,7 +69,7 @@
     margin: 0px 23px 0px 23px;
     font-size: 15px;
     font-family: 'Bebas Neue', cursive;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     letter-spacing: 1.5px;
     display: flex;
     justify-content: center;
@@ -80,14 +80,14 @@
 .menu_options ul a{
     list-style: none;
     text-decoration: none;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     color: black;
 }
 .menu_options ul li .icon_name{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     align-items: center;
     font-size: 250%;
     transition: 0.5s;
@@ -97,11 +97,14 @@
 }
 @media all  and (min-width:200px) and (max-width:300px)
 {
-    .shrink {
+    .navigation_container.shrink {
         width: 44px;
-        border: 2px solid green;
+        /* border: 2px solid green; */
         height: 44px;
         background: #5ED9BC;
+    }
+    .menu_options.shrink_options{
+        width: 0px;
     }
     .open_close_bt {
         height: 37px;
@@ -112,15 +115,27 @@
         font-size: 28px
     }
     .menu_options {
-        width: 80%;
+        width: 85%;
         height: 100%;
+    }
+    .menu_options ul {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        transition: 0.5s;
+        justify-content: space-between;
+        width: 100%;
+        right: 9%;
+        top: 4%;
+        position: relative;
     }
-
+    .menu_options ul li {
+        font-size: 10px;
+       margin: 0;
+    }
+    .navigation_container {
+        width: 96%;
+        height: 77%;
+        top: 17%;
+        right: 3%;
+    }
 }
 

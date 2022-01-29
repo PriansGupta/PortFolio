@@ -1,12 +1,12 @@
 import React from "react";
-import { Fragment } from "react/cjs/react.production.min";
+import { Fragment} from "react/cjs/react.production.min";
 import './logo.css';
 
 const Logo=(props)=>{
 
     return(
         <Fragment>
-            <a href="#home" className="dec">
+           <a href="#home" className="dec">
             <div  className={`logo_container ${props.scrollDet>99?"shift":""}`}>
                 <div className="circle"></div>
                 <div className="name">
@@ -16,6 +16,7 @@ const Logo=(props)=>{
                 </div>
             </div>
             </a>
+            
         </Fragment>
     );
 }
