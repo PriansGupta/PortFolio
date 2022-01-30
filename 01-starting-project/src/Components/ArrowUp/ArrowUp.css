@@ -10,15 +10,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     cursor: pointer;
+    z-index: 10;
 }
 .arrowup a{
     text-decoration: none;
     list-style: none;
     /* transform: translateY(5px); */
     font-size: 30px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     color:red;
 }
 @media all  and (min-width:200px) and (max-width:300px)

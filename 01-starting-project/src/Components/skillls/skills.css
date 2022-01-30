@@ -4,3 +4,11 @@
     /* justify-content: space-evenly; */
     width: 70%;
 }
+@media all  and (min-width:200px) and (max-width:300px)
+{
+    .Skills_holder {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}

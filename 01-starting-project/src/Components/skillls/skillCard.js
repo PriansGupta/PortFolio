@@ -35,12 +35,12 @@ Image=react;
                  <h2  className="skill_card_header">
                      {props.Name}
                  </h2>
-                 <div className="skill_card_level">
+                 {/* <div className="skill_card_level">
                      <ul>
                          <li>{props.info}</li>
                          <li>{`My Level : ${props.level}`}</li>
                      </ul>
-                 </div>
+                 </div> */}
              </div>
          </div>
         </Fragment>
