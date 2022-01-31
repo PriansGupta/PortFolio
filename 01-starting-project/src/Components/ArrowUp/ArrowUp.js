@@ -1,13 +1,16 @@
-import React, { Fragment} from "react";
-import './ArrowUp.css';
+import React, { Fragment } from "react";
+import "./ArrowUp.css";
 
-const ToggleButton=()=>{
-   
-    return(
+const ToggleButton = () => {
+  return (
     <Fragment>
-        <span className="arrowup"><a href="#home"><ion-icon name="chevron-up"></ion-icon></a></span>
+      <span className="arrowup">
+        <a href="#home">
+          <ion-icon name="chevron-up"></ion-icon>
+        </a>
+      </span>
     </Fragment>
-    );
-}
+  );
+};
 
 export default ToggleButton;

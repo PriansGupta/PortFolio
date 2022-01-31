@@ -1,93 +1,91 @@
-.logo_container{
+.logo_container {
+  position: fixed;
+  margin-top: 2%;
+  width: 20%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  /* border: 2px solid; */
+  /* border: 2px solid green; */
+  z-index: 100;
+}
+.dec {
+  list-style: none;
+  text-decoration: none;
+  /* border: 2px solid green; */
+  color: black;
+}
+.triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width: 34px;
+  height: 34px;
+  background: #5ed9bc;
+  /* border: 2px solid green; */
+  margin-top: 20px;
+  margin-left: -7px;
+}
+.name {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid green; */
+  justify-content: space-evenly;
+  z-index: 100;
+}
+.logo_name {
+  font-size: 30px;
+  /* border: 2px solid green; */
+  /* font-weight: bolder; */
+  font-family: "Abril Fatface";
+  letter-spacing: 10px;
+}
+.circle {
+  position: fixed;
+  margin-right: 184px;
+  margin-bottom: 6px;
+  z-index: 1;
+  /* border: 2px solid green; */
+  height: 50px;
+  width: 50px;
+  background: #60dce5;
+  border-radius: 50%;
+}
+.shift {
+  transform: translateX(190%);
+  margin-top: 1%;
+}
+@media all and (min-width: 200px) and (max-width: 300px) {
+  .logo_container {
+    display: none;
     position: fixed;
-    margin-top: 2%;
-    width: 20%;
+    left: 22%;
+    width: 54%;
     height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.5s;
-    /* border: 2px solid; */
-    border: 2px solid green;
-    z-index: 100;
-}
-.dec{
-    list-style: none;
-    text-decoration: none;
-    border: 2px solid green;
-    color: black;
-}
-.triangle{
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    width: 34px;
-    height: 34px;
-    background: #5ED9BC;
-    border: 2px solid green;
-    margin-top: 20px;
-    margin-left: -7px;
-
-}
-.name{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    border: 2px solid green;
-    justify-content:space-evenly;
-    z-index: 100;
-}
-.logo_name{
-    font-size: 30px;
-    border: 2px solid green;
-    /* font-weight: bolder; */
-    font-family: 'Abril Fatface';
-    letter-spacing:10px;
-}
-.circle{
+  }
+  .circle {
     position: fixed;
-    margin-right: 184px;
-    margin-bottom: 6px;
-    z-index: 1;
-    border: 2px solid green;
-    height: 50px;
-    width: 50px;
-    background: #60DCE5;
-    border-radius: 50%;
-}
-.shift{
-    transform: translateX(190%);
-    margin-top: 1%;
-}
-@media all  and (min-width:200px) and (max-width:300px)
-{
-    .logo_container {
-        display: none;
-        position: fixed;
-        left: 22%;
-        width: 54%;
-        height: 15%;
-    }
-    .circle {
-        position: fixed;
-        bottom: 1%;
-        left: 21%;
-        height: 30px;
-        width: 30px;
-    }
-    .name {
-        position: relative;
-        bottom: 18%;
-        height: fit-content;
-    }
-    .logo_name {
-        font-size: 21px;
-        letter-spacing: 5px;
-        margin: 0%;
-    }
-    .triangle {
-        width: 22px;
-        height: 24px;
-        margin-top: 1px;
-        position: relative;
-    }
+    bottom: 1%;
+    left: 21%;
+    height: 30px;
+    width: 30px;
+  }
+  .name {
+    position: relative;
+    bottom: 18%;
+    height: fit-content;
+  }
+  .logo_name {
+    font-size: 21px;
+    letter-spacing: 5px;
+    margin: 0%;
+  }
+  .triangle {
+    width: 22px;
+    height: 24px;
+    margin-top: 1px;
+    position: relative;
+  }
 }
