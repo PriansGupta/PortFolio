@@ -54,7 +54,7 @@ const Contact_Me = () => {
     reset: resetInputMsg,
   } = useInput(CheckTextIsValid);
 
-  const UserData = [{ Name: enteredName, Email: enteredEmail, M: enteredMsg }];
+  const UserData = [{ Name: enteredName, Email: enteredEmail, Message: enteredMsg }];
 
   const SendData = (Data) => {
     fetch("https://prians-9c7e3-default-rtdb.firebaseio.com/data.json", {
