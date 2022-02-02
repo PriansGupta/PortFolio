@@ -2,7 +2,7 @@
   height: fit-content;
   max-width: 250px;
   border-radius: 9px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   background: honeydew;
   /* border: solid 2px; */
   display: flex;
@@ -16,9 +16,8 @@
 }
 .Indi_thnx {
   height: 150px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 150px;
-  border: solid 3.5px orange;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -26,21 +25,20 @@
 }
 .Msg {
   text-align: center;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   font-family: "Dongle", sans-serif;
   font-size: 1.7em;
   font-weight: bold;
 }
-.check_icon {
-  color: orange;
-  border: 2px solid green;
+.check_icon 
+  {
   font-size: 4.3em;
 }
 .close_bt {
   font-size: 2em;
   position: absolute;
   top: 3px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   right: 3px;
   cursor: pointer;
   color: rgb(92, 92, 92);

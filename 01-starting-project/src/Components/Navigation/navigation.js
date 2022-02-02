@@ -51,7 +51,14 @@ const Navigation = (props) => {
 
   return (
     <Fragment>
-      {display && <Thanks onClose={DisplayChanger}></Thanks>}
+      {display && (
+        <Thanks
+          color="orange"
+          icon="cube"
+          text="Projects will be listed Soon."
+          onClose={DisplayChanger}
+        ></Thanks>
+      )}
       <div className={`navigation_container ${slider ? "shrink" : ""}`}>
         <div
           className={`open_close_bt ${slider ? "shrink_bt" : ""}`}

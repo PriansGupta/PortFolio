@@ -15,14 +15,15 @@ const Thanks = (props) => {
           <span className="close_bt" onClick={props.onClose}>
             <ion-icon name="close"></ion-icon>
           </span>
-          <div className="Indi_thnx">
-            <span className="check_icon">
-              <ion-icon name="cube"></ion-icon>
+          <div
+            className="Indi_thnx"
+            style={{ border: `solid 3.5px ${props.color}` }}
+          >
+            <span className="check_icon" style={{ color: `${props.color}` }}>
+              <ion-icon name={props.icon}></ion-icon>
             </span>
           </div>
-          <div className="Msg">
-            Empty...☹<br></br>Projects Will be listed Soon.
-          </div>
+          <div className="Msg">{props.text}</div>
         </div>
       </Fragment>
     );
@@ -30,11 +31,21 @@ const Thanks = (props) => {
   return (
     <React.Fragment>
       {ReactDOM.createPortal(
-        <Backdrop onClose={props.onClose} />,
+        <Backdrop
+          color={props.color}
+          icon={props.icon}
+          text={props.text}
+          onClose={props.onClose}
+        />,
         document.getElementById("backdrop-root")
       )}
       {ReactDOM.createPortal(
-        <ModalOverlay onClose={props.onClose} />,
+        <ModalOverlay
+          color={props.color}
+          icon={props.icon}
+          text={props.text}
+          onClose={props.onClose}
+        />,
         document.getElementById("overlay-root")
       )}
     </React.Fragment>
