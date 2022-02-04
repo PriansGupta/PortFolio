@@ -24,7 +24,7 @@
 }
 @media all and (min-width: 200px) and (max-width: 300px) {
   .arrowup {
-    bottom: 15%;
+    bottom: 13%;
     right: 3%;
     font-size: 100%;
     width: 2.5em;

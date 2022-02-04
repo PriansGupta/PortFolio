@@ -3,7 +3,7 @@ import { Fragment } from "react/cjs/react.production.min";
 import Header from "./Components/Header/Header";
 import Icons from "./Components/Icons/icons";
 import Introduction from "./Components/Introduction/Intro";
-import Contact_Me from "./Components/Contact_Me/contact_me";
+import ContactMe from "./Components/Contact_Me/contact_me";
 import Foot from "./Components/footer/footer";
 import About from "./Components/About/about_2";
 import ToggleButton from "./Components/ArrowUp/ArrowUp";
@@ -11,10 +11,13 @@ import ChatBt from "./Components/ChatIcon/chat";
 import Skill from "./Components/skillls/Skills";
 
 function App() {
-  var pos = window.scrollY;
+  let pos = window.scrollY;
   const [scrollPos, SetScrollPos] = useState(pos);
-  var [offset, SetOffset] = useState(0);
-  console.log(offset);
+  let [offset, SetOffset] = useState(0);
+  localStorage.setItem("Scroll", offset);
+
+  const ScrollHis = localStorage.getItem("Scroll");
+
   window.onscroll = (e) => {
     SetScrollPos(pos);
     offset = window.pageYOffset;
@@ -23,10 +26,11 @@ function App() {
   return (
     <Fragment>
       <div id="home"></div>
-      <Header scrollDet={scrollPos}></Header>
+      <Header scrollDet={ScrollHis !== 0 ? ScrollHis : scrollPos}></Header>
       <Icons></Icons>
-      <ToggleButton></ToggleButton>sssss
+      <ToggleButton></ToggleButton>
       <ChatBt></ChatBt>
+      <div className="fuckYou">
       <section className="Intro_sec">
         <Introduction></Introduction>
       </section>
@@ -38,17 +42,17 @@ function App() {
       <section
         id="about"
         className="about_me"
-        style={{ backgroundPositionY: `${-200 + offset * 0.7}px` }}
-      >
+        style={{ backgroundPositionY: `${-200 + offset * 0.7}px` }}>
         <h1 className="about_heading">About_Me_</h1>
         <About></About>
       </section>
       <section id="contact" className="contact_me">
-        <Contact_Me></Contact_Me>
+        <ContactMe></ContactMe>
       </section>
       <footer className="footer">
         <Foot></Foot>
       </footer>
+          </div>
     </Fragment>
   );
 }

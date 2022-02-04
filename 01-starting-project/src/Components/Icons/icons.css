@@ -12,12 +12,12 @@
   margin-top: 14%;
   transform: 1s ease;
   z-index: 1;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   background: white;
 }
 
 .icon_1 .link {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   font-size: 300%;
   cursor: pointer;
   border-radius: 50%;
@@ -25,7 +25,7 @@
 }
 .icon_2 .link {
   font-size: 300%;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   cursor: pointer;
   border-radius: 50%;
   color: #171515;
@@ -34,7 +34,7 @@
   font-size: 300%;
   cursor: pointer;
   border-radius: 50%;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   color: #bc2a8d;
 }
 @media all and (min-width: 200px) and (max-width: 300px) {

@@ -27,7 +27,7 @@
 
 @media all and (min-width: 200px) and (max-width: 300px) {
   .chat {
-    bottom: 15%;
+    bottom: 13%;
     left: 3%;
     width: 2.5em;
     height: 2.5em;

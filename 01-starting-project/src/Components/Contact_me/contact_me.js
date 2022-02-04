@@ -1,6 +1,6 @@
 import { Fragment } from "react/cjs/react.production.min";
 import { useState } from "react";
-import Method from "../ContactME/methods";
+import Method from "../ContactMethod/methods";
 import useInput from "../../Hooks/user-input";
 import Thanks from "../ThankModal/Thanks";
 import React from "react";
@@ -14,7 +14,7 @@ const CheckEmailIsValid = (value) => {
   return value.includes("@");
 };
 
-const Contact_Me = () => {
+const ContactMe = () => {
   const [display, SetDisplay] = useState(false);
 
   const MessageHandler = () => {
@@ -138,4 +138,4 @@ const Contact_Me = () => {
   );
 };
 
-export default Contact_Me;
+export default ContactMe;

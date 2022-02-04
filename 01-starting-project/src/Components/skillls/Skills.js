@@ -52,7 +52,7 @@ const Skill = () => {
             ImgName={x.ImgName}
             info={x.info}
             level={x.level}
-            id={x.id}
+            key={x.id}
             color={x.color}
             bgColor={x.bgColor}
           ></SkillCard>

@@ -1,75 +1,3 @@
-/* .skill_card{
-    display: flex;
-    flex-direction: column;
-    flex: 40%;
-    box-sizing: border-box;
-    margin: 20px;
-    height: 190px;
-    width: 200px;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.skill_card_img{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4%;
-    transition: 0.5s ease-in-out;
-    overflow: hidden;
-}
-.skill_img{
-    width: 60%;
-    transition: 0.5s ease-in-out;
-}
-
-.skill_card_details{
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-}
-.skill_card_header{
-    padding: 0;
-    margin: 0;
-   transition: 0.5s ease-in-out;
-   font-family: 'Bebas Neue', cursive;
-   letter-spacing: 5px;
-}
-.skill_card_level{
-    text-align: left;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-}
-.skill_card_level li{
-    list-style: none;
-    font-size: 15px;
-    line-height: 100%;
-    font-family: 'Supermercado One', cursive;
-}
-@media all  and (min-width:200px) and (max-width:300px)
-{
-    .skill_card {
-        display: flex;
-        flex-direction: column;
-        flex: 30% 1;
-        box-sizing: border-box;
-        margin: 9px;
-        height: 124px;
-        width: 170px;
-    }
-    .skill_card_header {
-        padding: 0;
-        font-size: 15px;
-    }
-
-
-} */
-
 .skill_card_holder{
     display: flex;
     flex-direction: column;
@@ -127,4 +55,20 @@
 	line-height: 30px;
     font-family: 'Supermercado One', cursive;
     /* letter-spacing: 2px; */
+}
+@media all  and (min-width:200px) and (max-width:300px)
+{
+    .skill_card_holder {
+        height: 138px;
+        width: 140px;
+    }
+    .skill_image {
+        width: 45%;
+    }
+    .skill_name {
+        height: 24%;
+    }
+    .skill_name h2 {
+        font-size: 16px;
+    }
 }

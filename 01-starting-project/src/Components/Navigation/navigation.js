@@ -76,7 +76,6 @@ const Navigation = (props) => {
               <li className={`${selected === 1 ? "active" : ""}`}>
                 <span
                   className={`icon_name ${selected === 1 ? "active" : ""}`}
-                  className="icon_name"
                   onClick={SelectedOptionsHandler_1}
                 >
                   <ion-icon name="home"></ion-icon>
@@ -100,14 +99,12 @@ const Navigation = (props) => {
                 About
               </li>
             </a>
-            <a>
-              <li className={`${selected === 4 ? "active" : ""}`}>
-                <span className="icon_name" onClick={SelectedOptionsHandler_4}>
-                  <ion-icon name="book"></ion-icon>
-                </span>
-                Projects
-              </li>
-            </a>
+            <li className={`${selected === 4 ? "active" : ""}`}>
+              <span className="icon_name" onClick={SelectedOptionsHandler_4}>
+                <ion-icon name="book"></ion-icon>
+              </span>
+              Projects
+            </li>
           </ul>
         </div>
       </div>

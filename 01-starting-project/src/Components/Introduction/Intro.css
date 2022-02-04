@@ -10,11 +10,11 @@
   box-shadow: -20px 20px 20px rgba(60, 60, 150, 0.25);
   border-radius: 6%;
   padding: 1%;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   height: 50%;
 }
 .Intro {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   max-width: fit-content;
   z-index: 1;
   padding: 1%;
@@ -25,7 +25,7 @@
 }
 .line_1 {
   font-size: 55px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   z-index: 1;
   letter-spacing: 6px;
   line-height: 50%;
@@ -37,14 +37,14 @@
   font-size: 30px;
   letter-spacing: 3px;
   z-index: 1;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   line-height: 25px;
   font-weight: lighter;
 }
 .line_3 {
   z-index: 1;
   color: white;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 2px;
@@ -55,7 +55,7 @@
   font-size: 20px;
   z-index: 1;
   line-height: 25px;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   letter-spacing: 2px;
   font-weight: bolder;
 }

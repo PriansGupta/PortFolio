@@ -3,6 +3,7 @@ import { Fragment } from "react/cjs/react.production.min";
 import "./logo.css";
 
 const Logo = (props) => {
+
   return (
     <Fragment>
       <a href="#home" className="dec">
