@@ -59,7 +59,7 @@
   letter-spacing: 2px;
   font-weight: bolder;
 }
-@media all and (min-width: 200px) and (max-width: 300px) {
+@media all and (min-width: 200px) and (max-width: 350px) {
   .line_4 {
     font-size: 12px;
     line-height: 21px;

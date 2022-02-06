@@ -89,9 +89,7 @@
     border: 1px solid red;
     background-color: rgb(255, 223, 223);
 }
-.noError{
-    /* border: 2px solid green; */
-}
+
 .submit button:disabled,
 button:disabled:hover,
 button:disabled:active{
@@ -100,7 +98,7 @@ button:disabled:active{
     border-color: #ccc;
     cursor: not-allowed;
 }
-@media all and (min-width: 200px) and (max-width: 300px) {
+@media all and (min-width: 200px) and (max-width: 350px) {
   .contact_me_container {
     flex-direction: column;
     width: 100%;

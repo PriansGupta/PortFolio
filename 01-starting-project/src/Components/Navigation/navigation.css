@@ -95,7 +95,7 @@
 .active{
     color: rgb(248, 97, 97);
 }
-@media all  and (min-width:200px) and (max-width:300px)
+@media all  and (min-width:200px) and (max-width:350px)
 {
     .navigation_container.shrink {
         width: 44px;

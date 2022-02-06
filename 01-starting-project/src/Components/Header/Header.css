@@ -11,16 +11,20 @@
   z-index: 100;
   background: white;
   /* border: 2px solid green; */
-  transition: 0.5s;
+  transition: 0.3s ease;
 }
+
 .heightDec {
   height: 20%;
 }
-@media all and (min-width: 200px) and (max-width: 300px) {
+@media all and (min-width: 200px) and (max-width: 350px) {
   .Header {
     height: 12%;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
     bottom: 0%;
   }
+  /* .down{
+    transform: translateY(100px);
+  } */
 }

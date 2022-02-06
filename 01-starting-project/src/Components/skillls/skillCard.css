@@ -56,7 +56,7 @@
     font-family: 'Supermercado One', cursive;
     /* letter-spacing: 2px; */
 }
-@media all  and (min-width:200px) and (max-width:300px)
+@media all  and (min-width:200px) and (max-width:350px)
 {
     .skill_card_holder {
         height: 138px;

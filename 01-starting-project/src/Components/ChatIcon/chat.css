@@ -25,7 +25,7 @@
   color: white;
 }
 
-@media all and (min-width: 200px) and (max-width: 300px) {
+@media all and (min-width: 200px) and (max-width: 350px) {
   .chat {
     bottom: 13%;
     left: 3%;

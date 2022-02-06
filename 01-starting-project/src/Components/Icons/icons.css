@@ -37,7 +37,7 @@
   /* border: 2px solid green; */
   color: #bc2a8d;
 }
-@media all and (min-width: 200px) and (max-width: 300px) {
+@media all and (min-width: 200px) and (max-width: 350px) {
   .icons {
     left: 6%;
     position: absolute;

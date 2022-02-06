@@ -20,6 +20,7 @@ const Navigation = (props) => {
 
   const SLiderChangeHandler = () => {
     SliderHandler(!slider);
+    props.shift(slider);
   };
   const SelectedOptionsHandler_1 = () => {
     OptionsChangeHandler(1);

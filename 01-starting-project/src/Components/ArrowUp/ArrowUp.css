@@ -22,7 +22,7 @@
   /* border: 2px solid green; */
   color: red;
 }
-@media all and (min-width: 200px) and (max-width: 300px) {
+@media all and (min-width: 200px) and (max-width: 350px) {
   .arrowup {
     bottom: 13%;
     right: 3%;

@@ -7,7 +7,7 @@
   /* border: 2px solid green; */
   font-family: "Mochiy Pop P One", sans-serif;
 }
-@media all and (min-width: 200px) and (max-width: 300px) {
+@media all and (min-width: 200px) and (max-width: 350px) {
 .end{
   font-size: 8px;
 }

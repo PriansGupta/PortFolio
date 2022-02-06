@@ -1,9 +1,9 @@
 .logo_container {
   position: fixed;
   margin-top: 2%;
+  left: 2%;
   width: 20%;
   height: 15%;
-  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -43,11 +43,11 @@
   letter-spacing: 10px;
 }
 .circle {
-  position: fixed;
-  margin-right: 184px;
-  margin-bottom: 6px;
+  position: absolute;
+  top: 28%;
+  left: 1%;
+  margin: 0;
   z-index: 1;
-  /* border: 2px solid green; */
   height: 50px;
   width: 50px;
   background: #60dce5;
@@ -57,21 +57,39 @@
   transform: translateX(190%);
   margin-top: 1%;
 }
-@media all and (min-width: 200px) and (max-width: 300px) {
+.display {
+  display: flex;
+}
+.displayPhone {
+  display: none;
+}
+@media all and (min-width: 200px) and (max-width: 350px) {
   .logo_container {
-    display: none;
     position: fixed;
     left: 22%;
-    width: 54%;
-    height: 15%;
+    width: 53%;
+    height: 9%;
+    margin-top: 6%;
+    padding: 0;
+}
+
+  .display {
+    display: none;
+  }
+  .displayPhone {
+    display: flex;
+  }
+  .Slide {
+    transform: translateY(100px);
   }
   .circle {
-    position: fixed;
-    bottom: 1%;
-    left: 21%;
+    position: relative;
+    bottom: 0%;
+    top: -12%;
+    left: 16%;
     height: 30px;
     width: 30px;
-  }
+}
   .name {
     position: relative;
     bottom: 18%;
