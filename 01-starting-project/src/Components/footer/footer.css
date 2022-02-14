@@ -12,3 +12,8 @@
   font-size: 8px;
 }
 }
+@media all and (min-width: 351px) and (max-width: 450px) {
+.end{
+  font-size: 8px;
+}
+}

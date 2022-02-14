@@ -45,7 +45,7 @@
 .circle {
   position: absolute;
   top: 28%;
-  left: 1%;
+  left: 6%;
   margin: 0;
   z-index: 1;
   height: 50px;
@@ -71,7 +71,7 @@
     height: 9%;
     margin-top: 6%;
     padding: 0;
-}
+  }
 
   .display {
     display: none;
@@ -89,7 +89,51 @@
     left: 16%;
     height: 30px;
     width: 30px;
+  }
+  .name {
+    position: relative;
+    bottom: 18%;
+    height: fit-content;
+  }
+  .logo_name {
+    font-size: 21px;
+    letter-spacing: 5px;
+    margin: 0%;
+  }
+  .triangle {
+    width: 22px;
+    height: 24px;
+    margin-top: 1px;
+    position: relative;
+  }
 }
+@media all and (min-width: 351px) and (max-width: 450px) {
+  .logo_container {
+    position: fixed;
+    left: 22%;
+    width: 53%;
+    height: 9%;
+    margin-top: 6%;
+    padding: 0;
+  }
+
+  .display {
+    display: none;
+  }
+  .displayPhone {
+    display: flex;
+  }
+  .Slide {
+    transform: translateY(100px);
+  }
+  .circle {
+    position: relative;
+    bottom: 0%;
+    top: -12%;
+    left: 16%;
+    height: 30px;
+    width: 30px;
+  }
   .name {
     position: relative;
     bottom: 18%;

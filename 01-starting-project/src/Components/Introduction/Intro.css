@@ -90,6 +90,40 @@
     width: 90%;
     top: 28%;
     left: 5%;
-    height: 62%;
+    height: 44%;
+  }
+}
+@media all and (min-width: 351px) and (max-width: 450px) {
+  .line_4 {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 2px;
+  }
+  .line_3 {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 2px;
+    letter-spacing: 2px;
+  }
+  .line_2 {
+    font-size: 20px;
+    margin: 2px;
+    letter-spacing: 2px;
+    line-height: 25px;
+  }
+  .line_1 {
+    margin: 3px;
+    font-size: 32px;
+    letter-spacing: 9px;
+    line-height: 111%;
+  }
+  .Intro {
+    width: 100%;
+  }
+  .Main_page {
+    width: 90%;
+    top: 28%;
+    left: 5%;
+    height: 44%;
   }
 }

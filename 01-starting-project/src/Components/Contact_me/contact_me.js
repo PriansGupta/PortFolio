@@ -16,6 +16,7 @@ const CheckEmailIsValid = (value) => {
 
 const ContactMe = () => {
   const [display, SetDisplay] = useState(false);
+  const [Error, SetError] = useState(false);
 
   const MessageHandler = () => {
     setTimeout(() => {
@@ -54,13 +55,30 @@ const ContactMe = () => {
     reset: resetInputMsg,
   } = useInput(CheckTextIsValid);
 
-  const UserData = [{ Name: enteredName, Email: enteredEmail, Message: enteredMsg }];
+  const UserData = [
+    { Name: enteredName, Email: enteredEmail, Message: enteredMsg },
+  ];
 
   const SendData = (Data) => {
-    fetch("https://prians-9c7e3-default-rtdb.firebaseio.com/data.json", {
+    const requestOptions = {
       method: "POST",
       body: JSON.stringify(Data),
-    });
+    };
+    fetch(
+      "https://prians-9c7e3-default-rtdb.firebaseio.com/data.json",
+      requestOptions
+    )
+      .then(async (response) => {
+        const data = await response.json();
+
+        if (!response.ok) {
+          SetError(true);
+        }
+      })
+      .catch((error) => {
+        console.error("There was an error!", error);
+        SetError(true);
+      });
   };
 
   const FormSubmitHandler = (event) => {
@@ -80,9 +98,9 @@ const ContactMe = () => {
     <Fragment>
       {display && (
         <Thanks
-          color="green"
-          icon="shield-checkmark"
-          text="Message Sent!"
+          color={`${Error ? "red" : "green"}`}
+          icon={`${Error ? "alert-circle" : "shield-checkmark"}`}
+          text={`${Error ? "Something went wrong" : "Message Sent!"}`}
           onClose={DisplayChanger}
         ></Thanks>
       )}

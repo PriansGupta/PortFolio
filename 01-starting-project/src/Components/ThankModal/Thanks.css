@@ -94,3 +94,32 @@
   font-size: 2.3em;
 }
 }
+@media all and (min-width: 351px) and (max-width: 450px) {
+  .modal {
+    position: fixed;
+    top: 19vh;
+    right: auto;
+    width: 49%;
+    transition: 1s;
+    z-index: 30006;
+    overflow: hidden;
+}
+
+.Thnx {
+  transform: translateX(7%);
+}
+.close_bt {
+  font-size: 1em;
+}
+.Indi_thnx {
+  height: 90px;
+  width: 90px;
+}
+.Msg {
+  font-size: 1em;
+}
+.check_icon 
+  {
+  font-size: 2.3em;
+}
+}

@@ -56,7 +56,7 @@ body {
   background: url("./Assets/Web.jpg");
   background-size: cover;
   box-shadow: 20px 20px 40px 20px rgba(60, 60, 150, 0.25);
-  z-index: -100;
+  z-index: 9;
   justify-content: space-around;
   align-items: center;
 }
@@ -109,6 +109,48 @@ body {
     background-image: url("./Assets/Intro_BackG.jpg");
     background-size: cover;
     background-attachment: fixed;
+    background-position: inherit;
+  }
+  .skill_heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .skills {
+    width: 100%;
+    height: fit-content;
+    /* border: 2px solid green; */
+    margin-top: 0%;
+  }
+  .about_me {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about_heading {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  .contact_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .about_me {
+    background-position-x: -112px;
+  }
+}
+@media all and (min-width: 351px) and (max-width: 450px) {
+  .Intro_sec {
+    width: 100%;
+    height: 420px;
+    background-image: url("./Assets/Intro_BackG.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: inherit;
   }
   .skill_heading {
     font-size: 2rem;

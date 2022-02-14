@@ -24,7 +24,12 @@ h6 {
   border-radius: 5%;
   /* border: 2px solid green; */
 }
-
+.card-container a{
+  list-style: none;
+  text-decoration: none;
+  width: 50%;
+  transform: translateX(30px);
+}
 .card-container {
   /* border: 2px solid green; */
   background-color: white;
@@ -72,6 +77,30 @@ h6 {
   z-index: 2000;
 }
 @media all and (min-width: 200px) and (max-width: 350px) {
+  .card-container {
+    width: 90%;
+    left: 5%;
+    background-color: transparent;
+  }
+  .card-container .round {
+    width: 30%;
+    background-color: transparent;
+  }
+  .intro_me {
+    font-size: 15px;
+    color: black;
+    margin: 0;
+    font-weight: 600;
+  }
+  .know_more {
+    color: white;
+  }
+  h6 {
+    color: white;
+  }
+}
+
+@media all and (min-width: 351px) and (max-width: 450px) {
   .card-container {
     width: 90%;
     left: 5%;

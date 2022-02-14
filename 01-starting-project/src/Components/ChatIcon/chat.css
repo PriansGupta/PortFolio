@@ -36,3 +36,14 @@
     font-size: 30px;
   }
 }
+@media all and (min-width: 351px) and (max-width: 450px) {
+  .chat {
+    bottom: 13%;
+    left: 3%;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  .chat a {
+    font-size: 30px;
+  }
+}

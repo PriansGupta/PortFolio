@@ -31,3 +31,12 @@
     height: 2.5em;
   }
 }
+@media all and (min-width: 351px) and (max-width: 450px) {
+  .arrowup {
+    bottom: 13%;
+    right: 3%;
+    font-size: 100%;
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
