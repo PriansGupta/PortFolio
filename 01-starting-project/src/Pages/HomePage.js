@@ -54,8 +54,8 @@ const Home = () => {
         HeaderDown={HeaderDown}
       ></Header>
       <Icons></Icons>
-      <ToggleButton></ToggleButton>
-      <ChatBt></ChatBt>
+      <ToggleButton Down={HeaderDown}></ToggleButton>
+      <ChatBt Down={HeaderDown}></ChatBt>
       <div className="FullApplication">
         <section className="Intro_sec">
           <Introduction></Introduction>

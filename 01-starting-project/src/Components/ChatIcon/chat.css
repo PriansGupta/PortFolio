@@ -24,7 +24,9 @@
   /* border: 2px solid green; */
   color: white;
 }
-
+/* .Down{
+  transform: translateY(30px);
+} */
 @media all and (min-width: 200px) and (max-width: 350px) {
   .chat {
     bottom: 13%;

@@ -17,6 +17,9 @@
 .heightDec {
   height: 20%;
 }
+/* .down {
+  display: none;
+} */
 @media all and (min-width: 200px) and (max-width: 350px) {
   .Header {
     height: 12%;
@@ -24,10 +27,6 @@
     border-radius: 15px 15px 0px 0px;
     bottom: 0%;
   }
-  /* .down{
-    transform: translateY(100px);
-    display: none;
-  } */
 }
 @media all and (min-width: 351px) and (max-width: 450px) {
   .Header {
@@ -36,8 +35,4 @@
     border-radius: 15px 15px 0px 0px;
     bottom: 0%;
   }
-  /* .down{
-    transform: translateY(100px);
-    display: none;
-  } */
 }

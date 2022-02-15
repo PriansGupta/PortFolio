@@ -1,10 +1,11 @@
 import React from "react";
 import { Fragment } from "react/cjs/react.production.min";
+import KmHeader from "../KnowMoreComponents/kmHeader/kmHeader";
 
 const KnowMore=()=>{
     return(
         <Fragment>
-            <h1>KnowMore</h1>
+            <KmHeader></KmHeader>
         </Fragment>
     );
 };
