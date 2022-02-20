@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Fragment } from "react/cjs/react.production.min";
+import Transition from "react-transition-group/Transition";
 import "./navigation.css";
 import Thanks from "../ThankModal/Thanks";
 
@@ -52,14 +53,18 @@ const Navigation = (props) => {
 
   return (
     <Fragment>
-      {display && (
-        <Thanks
-          color="orange"
-          icon="cube"
-          text="Projects will be listed Soon."
-          onClose={DisplayChanger}
-        ></Thanks>
-      )}
+      <Transition in={display} timeout={300} mountOnEnter unmountOnExit>
+        {(state) => (
+          <Thanks
+            color="orange"
+            icon="cube"
+            text="Projects will be listed Soon."
+            onClose={DisplayChanger}
+            display={state}
+          ></Thanks>
+        )}
+      </Transition>
+
       <div className={`navigation_container ${slider ? "shrink" : ""}`}>
         <div
           className={`open_close_bt ${slider ? "shrink_bt" : ""}`}

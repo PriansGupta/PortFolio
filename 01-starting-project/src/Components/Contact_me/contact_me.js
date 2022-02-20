@@ -1,5 +1,6 @@
 import { Fragment } from "react/cjs/react.production.min";
 import { useState } from "react";
+import Transition from "react-transition-group/Transition";
 import Method from "../ContactMethod/methods";
 import useInput from "../../Hooks/user-input";
 import Thanks from "../ThankModal/Thanks";
@@ -96,14 +97,18 @@ const ContactMe = () => {
 
   return (
     <Fragment>
-      {display && (
-        <Thanks
-          color={`${Error ? "red" : "green"}`}
-          icon={`${Error ? "alert-circle" : "shield-checkmark"}`}
-          text={`${Error ? "Something went wrong" : "Message Sent!"}`}
-          onClose={DisplayChanger}
-        ></Thanks>
-      )}
+      <Transition in={display} timeout={300} mountOnEnter unmountOnExit>
+        {(state) => (
+          <Thanks
+            color={`${Error ? "red" : "green"}`}
+            icon={`${Error ? "alert-circle" : "shield-checkmark"}`}
+            text={`${Error ? "Something went wrong" : "Message Sent!"}`}
+            onClose={DisplayChanger}
+            display={state}
+          ></Thanks>
+        )}
+      </Transition>
+
       <div className="contact_me_container">
         <h1 className="contact_me_heading">Contact_Me_</h1>
         <div className="data_container">

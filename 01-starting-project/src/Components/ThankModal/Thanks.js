@@ -5,13 +5,26 @@ import "./Thanks.css";
 
 const Thanks = (props) => {
   const Backdrop = (props) => {
-    return <div className="backdrop" onClick={props.onClose} />;
+    return (
+      <div
+        className={`backdrop ${props.display ? "openBd" : "closeBd"}`}
+        onClick={props.onClose}
+      />
+    );
   };
 
   const ModalOverlay = (props) => {
     return (
       <Fragment>
-        <div className="Thnx modal">
+        <div
+          className={`Thnx modal ${
+            props.display == "entering"
+              ? "openMd"
+              : props.display == "exiting"
+              ? "closeMd"
+              : null
+          }`}
+        >
           <span className="close_bt" onClick={props.onClose}>
             <ion-icon name="close"></ion-icon>
           </span>
@@ -36,6 +49,7 @@ const Thanks = (props) => {
           icon={props.icon}
           text={props.text}
           onClose={props.onClose}
+          display={props.display}
         />,
         document.getElementById("backdrop-root")
       )}
@@ -45,6 +59,7 @@ const Thanks = (props) => {
           icon={props.icon}
           text={props.text}
           onClose={props.onClose}
+          display={props.display}
         />,
         document.getElementById("overlay-root")
       )}

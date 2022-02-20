@@ -5,14 +5,53 @@
   /* border: 2px solid green; */
   background: honeydew;
   /* border: solid 2px; */
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateX(300px);
   box-shadow: 2px 2px 2px 2px gray;
   padding: 20px;
-  transition: 1s;
+  display: flex;
+}
+.openMd {
+ animation: Open 0.4s ease-out forwards;
+}
+@keyframes Open {
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50%{
+    opacity: 1;
+    transform: translateY(20%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.closeMd {
+  animation: Close 0.4s ease-out forwards;
+}
+@keyframes Close {
+  0%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  50%{
+    opacity: 0.8;
+    transform: translateY(60%);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+}
+.openBd {
+  display: block;
+}
+.closeBd {
+  display: none;
 }
 .Indi_thnx {
   height: 150px;
@@ -30,8 +69,7 @@
   font-size: 1.7em;
   font-weight: bold;
 }
-.check_icon 
-  {
+.check_icon {
   font-size: 4.3em;
 }
 .close_bt {
@@ -49,17 +87,19 @@
 .modal {
   position: fixed;
   top: 35vh;
-  left: 20%;
+  left: 40%;
   width: 80%;
   transition: 1s;
   z-index: 30000;
   overflow: hidden;
+  display: flex;
 }
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  /* display: block; */
   height: 100vh;
   z-index: 10;
   transition: 1s;
@@ -70,56 +110,56 @@
     position: fixed;
     top: 19vh;
     right: auto;
+    left: 23%;
     width: 49%;
     transition: 1s;
     z-index: 30006;
     overflow: hidden;
-}
+  }
 
-.Thnx {
-  transform: translateX(7%);
-}
-.close_bt {
-  font-size: 1em;
-}
-.Indi_thnx {
-  height: 90px;
-  width: 90px;
-}
-.Msg {
-  font-size: 1em;
-}
-.check_icon 
-  {
-  font-size: 2.3em;
-}
+  .Thnx {
+    transform: translateX(7%);
+  }
+  .close_bt {
+    font-size: 1em;
+  }
+  .Indi_thnx {
+    height: 90px;
+    width: 90px;
+  }
+  .Msg {
+    font-size: 1em;
+  }
+  .check_icon {
+    font-size: 2.3em;
+  }
 }
 @media all and (min-width: 351px) and (max-width: 450px) {
   .modal {
     position: fixed;
     top: 19vh;
     right: auto;
+    left: 23%;
     width: 49%;
     transition: 1s;
     z-index: 30006;
     overflow: hidden;
-}
+  }
 
-.Thnx {
-  transform: translateX(7%);
-}
-.close_bt {
-  font-size: 1em;
-}
-.Indi_thnx {
-  height: 90px;
-  width: 90px;
-}
-.Msg {
-  font-size: 1em;
-}
-.check_icon 
-  {
-  font-size: 2.3em;
-}
+  .Thnx {
+    transform: translateX(7%);
+  }
+  .close_bt {
+    font-size: 1em;
+  }
+  .Indi_thnx {
+    height: 90px;
+    width: 90px;
+  }
+  .Msg {
+    font-size: 1em;
+  }
+  .check_icon {
+    font-size: 2.3em;
+  }
 }
