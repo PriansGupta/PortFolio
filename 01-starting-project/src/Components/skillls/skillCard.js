@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Fragment } from "react/cjs/react.production.min";
+import Transition from "react-transition-group/Transition";
 import "./skillCard.css";
 import html from "../../Assets/html.png";
 import react from "../../Assets/react.png";
@@ -21,31 +22,44 @@ const SkillCard = (props) => {
   else if (props.ImgName === "javascript") Image = javascript;
   else if (props.ImgName === "react") Image = react;
 
-  var hoverSkill;
-  if (hoverState)
-    hoverSkill = (
+  const HoverSkill = (props) => {
+    return (
       <img
         src={Image}
         alt={props.Name}
-        className="skill_image"
-        style={
-          ({ width: `${hoverState ? "20%" : "40%"}` },
-          { transform: `${hoverState ? "scale(1.5)" : "scale(1)"}` })
-        }
+        className={`skill_image ${
+          props.display === "entering"
+            ? "openImg"
+            : props.display === "exiting"
+            ? "closeImg"
+            : null
+        }`}
+        // style={
+        //   ({ width: `${hoverState ? "20%" : "40%"}` },
+        //   { transform: `${hoverState ? "scale(1.5)" : "scale(1)"}` })
+        // }
       ></img>
     );
-  else
-    hoverSkill = (
-      <img
-        src={Image}
-        alt={props.Name}
-        className="skill_image"
-        style={
-          ({ width: `${hoverState ? "20%" : "40%"}` },
-          { transform: `${hoverState ? "scale(1)" : "scale(1)"}` })
-        }
-      ></img>
+  };
+
+  let information = props.info;
+
+  const SkillInfo = (props) => {
+    return (
+      <div
+        className={`SkillInfo_data ${
+          props.display === "entering"
+            ? "openDt"
+            : props.display === "exiting"
+            ? "closeDt"
+            : null
+        }`}
+      >
+        <p>{information}</p>
+      </div>
     );
+  };
+
   return (
     <Fragment>
       <div
@@ -64,7 +78,12 @@ const SkillCard = (props) => {
           className="Image_details"
           style={{ backgroundColor: `${props.color}` }}
         >
-          {hoverSkill}
+          <Transition in={hoverState} timeout={400} mountOnEnter unmountOnExit>
+            {(state) => <SkillInfo display={state}></SkillInfo>}
+          </Transition>
+          <Transition in={!hoverState} timeout={400} mountOnEnter unmountOnExit>
+            {(state) => <HoverSkill display={state}></HoverSkill>}
+          </Transition>
         </div>
         <div
           className="skill_name"

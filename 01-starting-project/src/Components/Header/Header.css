@@ -3,15 +3,33 @@
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 4px 5px 5px gray;
+  border-radius: 0px 0px 15px 15px;
   height: 22%;
   width: 100%;
   justify-content: space-between;
-  border-radius: 0px 0px 15px 15px;
   position: fixed;
   z-index: 100;
   background: white;
   /* border: 2px solid green; */
   transition: 0.3s ease;
+}
+.back_link {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  /* border: 2px solid; */
+  justify-content: center;
+  margin: 42px;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 1px grey;
+  padding: 1%;
+}
+.back_icon {
+  font-size: 1.5em;
 }
 
 .heightDec {
@@ -27,6 +45,13 @@
     border-radius: 15px 15px 0px 0px;
     bottom: 0%;
   }
+  .back_link {
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid; */
+    justify-content: center;
+    margin: 7px;
+  }
 }
 @media all and (min-width: 351px) and (max-width: 450px) {
   .Header {
@@ -34,5 +59,12 @@
     width: 100%;
     border-radius: 15px 15px 0px 0px;
     bottom: 0%;
+  }
+  .back_link {
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid; */
+    justify-content: center;
+    margin: 7px;
   }
 }

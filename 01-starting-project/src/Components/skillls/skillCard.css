@@ -33,14 +33,17 @@
   background-color: rgb(255, 103, 47);
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 5%;
   transition: 0.5s ease-in-out;
   overflow: hidden;
 }
 .skill_image {
-  transition: 1s ease;
+  /* transition: 1s ease; */
+  z-index:10;
   width: 40%;
+  position: relative;
 }
 .details {
   width: 90%;
@@ -54,6 +57,90 @@
   line-height: 30px;
   font-family: "Supermercado One", cursive;
   /* letter-spacing: 2px; */
+}
+.SkillInfo_data p {
+  font:800;
+  font-size: 13px;
+}
+.SkillInfo_data {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  /* z-index: 200; */
+  padding: 2%;
+  color: black;
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.openDt {
+  animation: Open 0.4s ease-in-out forwards;
+}
+@keyframes Open {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+.closeDt {
+  animation: Close 0.4s ease-in-out forwards;
+}
+@keyframes Close {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateX(60%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+.openImg {
+  animation: OpenImg 0.4s ease-in-out forwards;
+}
+@keyframes OpenImg {
+  0% {
+    opacity: 0;
+    /* transform: translateX(-100%); */
+  }
+  50% {
+    opacity: 1;
+    /* transform: translateX(20%); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateX(0%); */
+  }
+}
+.closeImg {
+  animation: CloseImg 0.4s ease-in-out forwards;
+}
+@keyframes CloseImg {
+  0% {
+    opacity: 1;
+    /* transform: translateX(0%); */
+  }
+  50% {
+    opacity: 0.8;
+    /* transform: translateX(60%); */
+  }
+  100% {
+    opacity: 0;
+    /* transform: translateX(-100%); */
+  }
 }
 @media all and (min-width: 200px) and (max-width: 350px) {
   .skill_card_holder {

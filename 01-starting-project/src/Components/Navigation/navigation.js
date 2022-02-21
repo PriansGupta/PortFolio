@@ -1,22 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { Fragment } from "react/cjs/react.production.min";
+import { Link } from "react-router-dom";
 import Transition from "react-transition-group/Transition";
 import "./navigation.css";
 import Thanks from "../ThankModal/Thanks";
 
 const Navigation = (props) => {
+  let CurrPath = window.location.pathname;
+  console.log(CurrPath);
   const [selected, OptionsChangeHandler] = useState(1);
   const [slider, SliderHandler] = useState(false);
   const [display, SetDisplay] = useState(false);
 
   const MessageHandler = () => {
     setTimeout(() => {
-      SetDisplay(true);
+      if (CurrPath === "/Home" || CurrPath === "/") SetDisplay(true);
     }, 100);
   };
 
   const DisplayChanger = () => {
-    SetDisplay(false);
+    if (CurrPath === "/Home" || CurrPath === "/") SetDisplay(false);
   };
 
   const SLiderChangeHandler = () => {
@@ -53,7 +56,7 @@ const Navigation = (props) => {
 
   return (
     <Fragment>
-      <Transition in={display} timeout={300} mountOnEnter unmountOnExit>
+      <Transition in={display} timeout={400} mountOnEnter unmountOnExit>
         {(state) => (
           <Thanks
             color="orange"
@@ -76,7 +79,13 @@ const Navigation = (props) => {
             ></ion-icon>
           </span>
         </div>
-        <div className={`menu_options ${slider ? "shrink_options" : ""} `}>
+        <div
+          className={`menu_options ${slider ? "shrink_options" : ""} ${
+            CurrPath === "/Home" || CurrPath === "/"
+              ? "HomePageMenu"
+              : "KnowMoreMenu"
+          }`}
+        >
           <ul>
             <a href="#home">
               <li className={`${selected === 1 ? "active" : ""}`}>
@@ -84,33 +93,71 @@ const Navigation = (props) => {
                   className={`icon_name ${selected === 1 ? "active" : ""}`}
                   onClick={SelectedOptionsHandler_1}
                 >
-                  <ion-icon name="home"></ion-icon>
+                  <ion-icon
+                    name={`${CurrPath === "/Home" || "/" ? "home" : "book"}`}
+                  ></ion-icon>
                 </span>
-                Home
+                {`${
+                  CurrPath === "/Home" || CurrPath === "/"
+                    ? "Home"
+                    : "Qualifications"
+                }`}
               </li>
             </a>
             <a href="#skills">
               <li className={`${selected === 2 ? "active" : ""}`}>
                 <span className="icon_name" onClick={SelectedOptionsHandler_2}>
-                  <ion-icon name="hand-left"></ion-icon>
+                  <ion-icon
+                    name={`${
+                      CurrPath === "/Home" || CurrPath === "/"
+                        ? "hand-left"
+                        : "ribbon"
+                    }`}
+                  ></ion-icon>
                 </span>
-                Skills
+                {`${
+                  CurrPath === "/Home" || CurrPath === "/" ? "Skills" : "Badges"
+                }`}
               </li>
             </a>
             <a href="#about">
               <li className={`${selected === 3 ? "active" : ""}`}>
                 <span className="icon_name" onClick={SelectedOptionsHandler_3}>
-                  <ion-icon name="information-circle"></ion-icon>
+                  <ion-icon
+                    name={`${
+                      CurrPath === "/Home" || CurrPath === "/"
+                        ? "information-circle"
+                        : "medal"
+                    }`}
+                  ></ion-icon>
                 </span>
-                About
+                {`${
+                  CurrPath === "/Home" || CurrPath === "/"
+                    ? "About"
+                    : "Achievements"
+                }`}
               </li>
             </a>
-            <li className={`${selected === 4 ? "active" : ""}`}>
-              <span className="icon_name" onClick={SelectedOptionsHandler_4}>
-                <ion-icon name="book"></ion-icon>
-              </span>
-              Projects
-            </li>
+            {CurrPath === "/Home" || CurrPath === "/" ? (
+              <li className={`${selected === 4 ? "active" : ""}`}>
+                <span className="icon_name" onClick={SelectedOptionsHandler_4}>
+                  <ion-icon name="apps"></ion-icon>
+                </span>
+                Projects
+              </li>
+            ) : (
+              <Link to="/Home">
+                <li className={`${selected === 4 ? "active" : ""}`}>
+                  <span
+                    className="icon_name"
+                    onClick={SelectedOptionsHandler_4}
+                  >
+                    <ion-icon name="arrow-back"></ion-icon>
+                  </span>
+                  Back
+                </li>
+              </Link>
+            )}
           </ul>
         </div>
       </div>

@@ -70,8 +70,6 @@ const ContactMe = () => {
       requestOptions
     )
       .then(async (response) => {
-        const data = await response.json();
-
         if (!response.ok) {
           SetError(true);
         }
@@ -97,7 +95,7 @@ const ContactMe = () => {
 
   return (
     <Fragment>
-      <Transition in={display} timeout={300} mountOnEnter unmountOnExit>
+      <Transition in={display} timeout={400} mountOnEnter unmountOnExit>
         {(state) => (
           <Thanks
             color={`${Error ? "red" : "green"}`}

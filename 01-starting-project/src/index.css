@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
   height: 300px;
   /* border: 2px solid green; */
   height: fit-content;
@@ -95,7 +96,7 @@ body {
   background: #60dce5;
   bottom: 0;
 }
-.FullApplication{
+.FullApplication {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +139,7 @@ body {
     align-items: center;
     width: 100%;
   }
-  
+
   .about_me {
     background-position-x: -112px;
   }
@@ -179,7 +180,7 @@ body {
     align-items: center;
     width: 100%;
   }
-  
+
   .about_me {
     background-position-x: -112px;
   }

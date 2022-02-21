@@ -15,20 +15,3 @@
     position: relative;
     transform: translateX(100px);
 } */
-.back_link {
-  list-style: none;
-  text-decoration: none;
-  color: black;
-  display: flex;
-  width: 50px;
-  height: 50px;
-  /* border: 2px solid; */
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  box-shadow: 1px 1px 1px 1px grey;
-  padding: 1%;
-}
-.back_icon {
-  font-size: 1.5em;
-}

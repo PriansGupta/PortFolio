@@ -18,9 +18,9 @@ const Thanks = (props) => {
       <Fragment>
         <div
           className={`Thnx modal ${
-            props.display == "entering"
+            props.display === "entering"
               ? "openMd"
-              : props.display == "exiting"
+              : props.display === "exiting"
               ? "closeMd"
               : null
           }`}

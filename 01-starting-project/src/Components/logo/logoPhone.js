@@ -6,7 +6,11 @@ const LogoPhone = (props) => {
   return (
     <Fragment>
       <a href="#home" className="dec">
-        <div className={`logo_container displayPhone ${props.slide ? "Slide" : ""}`}>
+        <div
+          className={`logo_container displayPhone ${
+            props.slide ? "Slide" : ""
+          }`}
+        >
           <div className="circle"></div>
           <div className="name">
             <h1 className="logo_name">PRI</h1>
