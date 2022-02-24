@@ -24,7 +24,7 @@ h6 {
   border-radius: 5%;
   /* border: 2px solid green; */
 }
-.card-container a{
+.card-container a {
   list-style: none;
   text-decoration: none;
   width: 50%;
@@ -59,9 +59,9 @@ h6 {
   width: 55%;
   height: fit-content;
   padding: 1%;
-  color: blue;
+  color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   /* border: 2px solid green; */
   align-items: center;
@@ -75,6 +75,15 @@ h6 {
   cursor: pointer;
   /* border: 2px solid green; */
   z-index: 2000;
+}
+.know_more .side_arrow a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(112, 187, 112);
+  transition: 0.3s;
+}
+.know_more .side_arrow a:hover {
+  color: green;
 }
 @media all and (min-width: 200px) and (max-width: 350px) {
   .card-container {

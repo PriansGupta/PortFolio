@@ -94,7 +94,7 @@ const Navigation = (props) => {
                   onClick={SelectedOptionsHandler_1}
                 >
                   <ion-icon
-                    name={`${CurrPath === "/Home" || "/" ? "home" : "book"}`}
+                    name={`${CurrPath === "/Home" || CurrPath === "/" ? "home": "medal"}`}
                   ></ion-icon>
                 </span>
                 {`${

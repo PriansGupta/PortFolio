@@ -38,7 +38,23 @@ body {
   /* border: 2px solid green; */
   height: fit-content;
   box-shadow: 20px 20px 40px 20px rgba(60, 60, 150, 0.25);
-  border-radius: 8px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
 }
 .skill_heading {
   font-size: 3rem;
@@ -102,6 +118,10 @@ body {
   align-items: center;
   justify-content: space-around;
   height: fit-content;
+}
+.KnowMorePage {
+  display: flex;
+  flex-direction: column;
 }
 @media all and (min-width: 200px) and (max-width: 350px) {
   .Intro_sec {

@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import Resume from "../../Assets/Priyansh_Gupta.pdf"
 import { Fragment } from "react/cjs/react.production.min";
 import User from "../../Assets/User_Prians.png";
 import "./about_2.css";
@@ -21,14 +22,12 @@ const About = () => {
           the years, has built up a diverse range of skills, qualities and
           attributes that guarantee I will perform highly in this role...."
         </p>
-        <Link to="/KnowMore">
-          <div className="know_more" onClick={clicked}>
-            Know more
-            <span className="side_arrow">
-              <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-            </span>
-          </div>
-        </Link>
+        <div className="know_more" onClick={clicked}>
+          Download Resume
+          <span className="side_arrow">
+            <a href={Resume} download><ion-icon name="download"></ion-icon></a>
+          </span>
+        </div>
       </div>
     </Fragment>
   );

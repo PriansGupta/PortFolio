@@ -9,7 +9,6 @@ import About from "../Components/About/about_2";
 import ToggleButton from "../Components/ArrowUp/ArrowUp";
 import ChatBt from "../Components/ChatIcon/chat";
 import Skill from "../Components/skillls/Skills";
-import { useEffect } from "react";
 
 const Home = () => {
   let pos = window.scrollY;
@@ -17,26 +16,6 @@ const Home = () => {
   const [scrollPos, SetScrollPos] = useState(pos);
 
   let [offset, SetOffset] = useState(0);
-
-  const [HeaderDown, SetHeaderDown] = useState(false);
-
-  const [y, setY] = useState(0);
-
-  const handleNavigation = (e) => {
-    const window = e.currentTarget;
-    if (y > window.scrollY) {
-      SetHeaderDown(false);
-    } else if (y < window.scrollY) {
-      SetHeaderDown(true);
-    }
-    setY(window.scrollY);
-  };
-
-  useEffect(() => {
-    setY(window.scrollY);
-
-    window.addEventListener("scroll", (e) => handleNavigation(e));
-  }, [y, handleNavigation]);
 
   localStorage.setItem("Scroll", offset);
   const ScrollHis = localStorage.getItem("Scroll");
@@ -49,13 +28,10 @@ const Home = () => {
   return (
     <Fragment>
       <div id="home"></div>
-      <Header
-        scrollDet={ScrollHis !== 0 ? ScrollHis : scrollPos}
-        HeaderDown={HeaderDown}
-      ></Header>
+      <Header scrollDet={ScrollHis !== 0 ? ScrollHis : scrollPos}></Header>
       <Icons></Icons>
-      <ToggleButton Down={HeaderDown}></ToggleButton>
-      <ChatBt Down={HeaderDown}></ChatBt>
+      <ToggleButton></ToggleButton>
+      <ChatBt></ChatBt>
       <div className="FullApplication">
         <section className="Intro_sec">
           <Introduction></Introduction>

@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import "./chat.css";
 
-const ChatBt = (props) => {
+const ChatBt = () => {
   return (
     <Fragment>
-      <span className={`chat ${props.Down ? "Down" : ""}`}>
+      <span className="chat">
         <a href="#contact">
           <ion-icon name="chatbubble-ellipses"></ion-icon>
         </a>

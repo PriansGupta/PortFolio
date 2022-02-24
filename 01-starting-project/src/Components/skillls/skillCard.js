@@ -27,17 +27,8 @@ const SkillCard = (props) => {
       <img
         src={Image}
         alt={props.Name}
-        className={`skill_image ${
-          props.display === "entering"
-            ? "openImg"
-            : props.display === "exiting"
-            ? "closeImg"
-            : null
-        }`}
-        // style={
-        //   ({ width: `${hoverState ? "20%" : "40%"}` },
-        //   { transform: `${hoverState ? "scale(1.5)" : "scale(1)"}` })
-        // }
+        className="skill_image"
+        style={{ display: `${hoverState ? "none" : "block"}` }}
       ></img>
     );
   };
@@ -81,9 +72,10 @@ const SkillCard = (props) => {
           <Transition in={hoverState} timeout={400} mountOnEnter unmountOnExit>
             {(state) => <SkillInfo display={state}></SkillInfo>}
           </Transition>
-          <Transition in={!hoverState} timeout={400} mountOnEnter unmountOnExit>
+          {/* <Transition in={!hoverState} timeout={400} mountOnEnter unmountOnExit>
             {(state) => <HoverSkill display={state}></HoverSkill>}
-          </Transition>
+          </Transition> */}
+          <HoverSkill></HoverSkill>
         </div>
         <div
           className="skill_name"

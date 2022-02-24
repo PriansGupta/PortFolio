@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   /* justify-content: space-evenly; */
   width: 70%;
+  position: relative;
+  z-index: 1;
 }
 
 @media all and (min-width: 200px) and (max-width: 350px) {
