@@ -3,12 +3,13 @@ import { Fragment } from "react/cjs/react.production.min";
 import "./logo.css";
 
 const Logo = (props) => {
-
   return (
     <Fragment>
       <a href="#home" className="dec">
         <div
-          className={`logo_container display ${props.scrollDet > 99 ? "shift" : ""}`}
+          className={`logo_container display ${
+            props.scrollDet > 99 ? "shift" : ""
+          }`}
         >
           <div className="circle"></div>
           <div className="name">

@@ -1,10 +1,12 @@
 .Skills_holder {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
-  width: 70%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   position: relative;
   z-index: 1;
+  /* border: 1px solid; */
 }
 
 @media all and (min-width: 200px) and (max-width: 350px) {

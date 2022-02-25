@@ -18,6 +18,7 @@ const CheckEmailIsValid = (value) => {
 const ContactMe = () => {
   const [display, SetDisplay] = useState(false);
   const [Error, SetError] = useState(false);
+  const [hoverState, SetHoverState] = useState(false);
 
   const MessageHandler = () => {
     setTimeout(() => {
@@ -88,7 +89,12 @@ const ContactMe = () => {
     SendData(UserData);
     MessageHandler();
   };
-
+  const HoverEnter = () => {
+    SetHoverState(true);
+  };
+  const HoverLeave = () => {
+    SetHoverState(false);
+  };
   let FormIsValid = false;
 
   if (nameIsValid && EmailIsValid && MsgIsValid) FormIsValid = true;
@@ -110,6 +116,7 @@ const ContactMe = () => {
       <div className="contact_me_container">
         <h1 className="contact_me_heading">Contact_Me_</h1>
         <div className="data_container">
+          <p className="CreditsPhone">Created by Priyansh Gupta</p>
           <div className="contact_methods">
             <Method></Method>
           </div>

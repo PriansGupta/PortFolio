@@ -27,23 +27,25 @@ h6 {
 .card-container a {
   list-style: none;
   text-decoration: none;
-  width: 50%;
-  transform: translateX(30px);
+  width: 40%;
+  margin: 10px;
 }
+
 .card-container {
   /* border: 2px solid green; */
   background-color: white;
   border-radius: 5%;
   box-shadow: 0px 10px 20px -30px rgba(0, 0, 0, 0.75);
   color: #b3b8cd;
-  width: 37%;
+  width: 100%;
   text-align: center;
-  padding: 2%;
+  padding: 3%;
   display: flex;
   justify-content: center;
   z-index: 2000;
   flex-direction: column;
   align-items: center;
+  height: max-content;
 }
 
 .card-container .round {
@@ -54,19 +56,44 @@ h6 {
   width: 30%;
   z-index: 2000;
 }
-
+.know_more p {
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+  transition: 0.3s;
+}
+.know_more.over p {
+  color: #03bfcb;
+}
+.know_more.over {
+  background-color: white;
+  /* display: none; */
+  border: 2px solid #03bfcb;
+  color: #03bfcb;
+}
+.fontc {
+  color: #03bfcb;
+}
+.tilt {
+  width: 37%;
+  display: flex;
+  justify-content: center;
+}
 .know_more {
-  width: 55%;
+  transition: 0.3s ease-in-out all;
+  width: 100%;
   height: fit-content;
   padding: 1%;
-  color: black;
+  color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   /* border: 2px solid green; */
   align-items: center;
   cursor: pointer;
   z-index: 2000;
+  background-color: #03bfcb;
+  border-radius: 20px;
 }
 .side_arrow {
   transform: translateX(5px);
@@ -79,17 +106,22 @@ h6 {
 .know_more .side_arrow a {
   list-style: none;
   text-decoration: none;
-  color: rgb(112, 187, 112);
+  color: white;
+  font-weight: bolder;
   transition: 0.3s;
+  margin: 5px;
+  height: fit-content;
+  transition: 0.3s ease-in-out;
 }
-.know_more .side_arrow a:hover {
-  color: green;
-}
+
 @media all and (min-width: 200px) and (max-width: 350px) {
   .card-container {
     width: 90%;
     left: 5%;
     background-color: transparent;
+  }
+  .tilt {
+    width: 100%;
   }
   .card-container .round {
     width: 30%;
@@ -114,6 +146,9 @@ h6 {
     width: 90%;
     left: 5%;
     background-color: transparent;
+  }
+  .tilt {
+    width: 100%;
   }
   .card-container .round {
     width: 30%;

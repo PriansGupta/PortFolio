@@ -39,19 +39,23 @@ const Navigation = (props) => {
     MessageHandler();
     OptionsChangeHandler(4);
   };
-
+  console.log(props.scrollDet);
   useEffect(() => {
-    if (props.scrollDet < 350) OptionsChangeHandler(1);
+    if (props.scrollDet < 380) OptionsChangeHandler(1);
   }, [props.scrollDet]);
 
   useEffect(() => {
-    if (props.scrollDet > 550 && props.scrollDet < 1150)
+    if (props.scrollDet > 400 && props.scrollDet < 1150)
       OptionsChangeHandler(2);
   }, [props.scrollDet]);
 
   useEffect(() => {
-    if (props.scrollDet > 1150 && props.scrollDet < 1530)
+    if (props.scrollDet > 1150 && props.scrollDet < 1600)
       OptionsChangeHandler(3);
+  }, [props.scrollDet]);
+  useEffect(() => {
+    if (props.scrollDet > 1600)
+      OptionsChangeHandler(-1);
   }, [props.scrollDet]);
 
   return (
@@ -94,7 +98,11 @@ const Navigation = (props) => {
                   onClick={SelectedOptionsHandler_1}
                 >
                   <ion-icon
-                    name={`${CurrPath === "/Home" || CurrPath === "/" ? "home": "medal"}`}
+                    name={`${
+                      CurrPath === "/Home" || CurrPath === "/"
+                        ? "home"
+                        : "medal"
+                    }`}
                   ></ion-icon>
                 </span>
                 {`${

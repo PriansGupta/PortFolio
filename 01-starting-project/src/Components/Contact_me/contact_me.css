@@ -9,6 +9,20 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.CreditsPhone {
+  display: none;
+  color: black;
+  font-size: 10px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  font-weight:bolder;
+  text-transform: capitalize;
+  /* border: 2px solid green; */
+  font-family: "Mochiy Pop P One", sans-serif;
+}
 .contact_me_heading {
   /* border: 2px solid green; */
   font-size: 3rem;
@@ -72,8 +86,9 @@
   text-align: center;
 }
 .submit {
-  height: 10%;
-  width: 20%;
+  height: 15%;
+  width: 30%;
+  padding: 1%;
   font-size: 1em;
   font-family: "poppins", sans-serif;
   font-weight: bold;
@@ -107,6 +122,9 @@ button:disabled:active {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .CreditsPhone {
+    display: block;
   }
   .data_container {
     /* border: 2px solid green; */
@@ -193,6 +211,9 @@ button:disabled:active {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .CreditsPhone {
+    display: block;
   }
   .data_container {
     /* border: 2px solid green; */

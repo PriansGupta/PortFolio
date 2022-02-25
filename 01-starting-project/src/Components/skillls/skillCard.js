@@ -6,6 +6,14 @@ import html from "../../Assets/html.png";
 import react from "../../Assets/react.png";
 import javascript from "../../Assets/javascript.png";
 import css from "../../Assets/css3.png";
+import c from "../../Assets/c.png";
+import java from "../../Assets/java.png";
+import Adobe from "../../Assets/Adobe.png";
+import JSX from "../../Assets/jsx.png";
+import MUI from "../../Assets/mui.png";
+import Redux from "../../Assets/redux.png";
+import Router from "../../Assets/router.png";
+
 
 const SkillCard = (props) => {
   const [hoverState, SetHoverState] = useState(false);
@@ -21,6 +29,13 @@ const SkillCard = (props) => {
   else if (props.ImgName === "css") Image = css;
   else if (props.ImgName === "javascript") Image = javascript;
   else if (props.ImgName === "react") Image = react;
+  else if (props.ImgName === "c") Image = c;
+  else if (props.ImgName === "java") Image = java;
+  else if (props.ImgName === "Adobe") Image = Adobe;
+  else if (props.ImgName === "jsx") Image = JSX;
+  else if (props.ImgName === "mui") Image = MUI;
+  else if (props.ImgName === "redux") Image = Redux;
+  else if (props.ImgName === "router") Image = Router;
 
   const HoverSkill = (props) => {
     return (
@@ -66,22 +81,30 @@ const SkillCard = (props) => {
         }}
       >
         <div
-          className="Image_details"
-          style={{ backgroundColor: `${props.color}` }}
+          className={`Image_details ${hoverState?"backhover":""}`}
+          style={{
+            backgroundColor: `${hoverState ? "white" : props.color}`,
+            border: `4px solid ${props.color}`,
+          }}
         >
           <Transition in={hoverState} timeout={400} mountOnEnter unmountOnExit>
             {(state) => <SkillInfo display={state}></SkillInfo>}
           </Transition>
-          {/* <Transition in={!hoverState} timeout={400} mountOnEnter unmountOnExit>
-            {(state) => <HoverSkill display={state}></HoverSkill>}
-          </Transition> */}
           <HoverSkill></HoverSkill>
         </div>
         <div
           className="skill_name"
-          style={{ border: `4px solid ${props.color}` }}
+          style={{
+            backgroundColor: `${!hoverState ? "white" : props.color}`,
+            border: `4px solid ${props.color}`,
+          }}
         >
-          <h2 className="Heading">{props.Name}</h2>
+          <h2
+            className="Heading"
+            style={{ color: `${hoverState ? "white" : "black"}` }}
+          >
+            {props.Name}
+          </h2>
         </div>
       </div>
     </Fragment>

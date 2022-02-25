@@ -4,8 +4,9 @@
   flex: 35%;
   box-sizing: border-box;
   margin: 15px;
-  height: 210px;
-  width: 140px;
+  height: 200px;
+  padding: 1%;
+  width: 250px;
   overflow: hidden;
   border-radius: 18px;
   cursor: pointer;
@@ -14,6 +15,7 @@
 .skill_name {
   width: 100%;
   height: 20%;
+  /* color:  #ccb0f8; */
   border: 2px solid rgb(255, 103, 47);
   text-align: center;
   display: flex;
@@ -38,26 +40,42 @@
   align-items: center;
   padding: 5%;
   transition: 0.5s ease-in-out;
+  border-radius: 18px 18px 0px 0px;
+  /* background-image: url("../../Assets/html.png") ; */
+  background-size: cover;
   overflow: hidden;
 }
+/* .backhover {
+  background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+} */
 .skill_image {
-  /* transition: 0.5s ease-in-out; */
   z-index: 10;
   width: 40%;
   position: relative;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .details {
   width: 90%;
   height: 80%;
   border: none;
-  /* padding: 5%; */
 }
 .details p {
   border: none;
   font-size: 20px;
   line-height: 30px;
-  font-family: "Supermercado One", cursive;
-  /* letter-spacing: 2px; */
+  font-family: sans-serif;
 }
 .SkillInfo_data p {
   font: 800;
@@ -68,7 +86,7 @@
   position: relative;
   width: 100%;
   padding: 2%;
-  color: rgb(36, 0, 0);
+  color: rgb(20, 2, 2);
   font-weight: bolder;
   font-family: "Times New Roman", Times, serif;
   display: flex;
@@ -159,6 +177,10 @@
   .skill_name h2 {
     font-size: 16px;
   }
+  .SkillInfo_data p {
+    font: 800;
+    font-size: 8px;
+  }
 }
 @media all and (min-width: 351px) and (max-width: 450px) {
   .skill_card_holder {
@@ -167,6 +189,10 @@
   }
   .skill_image {
     width: 45%;
+  }
+  .SkillInfo_data p {
+    font: 800;
+    font-size: 8px;
   }
   .skill_name {
     height: 24%;

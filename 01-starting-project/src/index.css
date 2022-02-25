@@ -28,7 +28,7 @@ body {
   /* border: 2px solid green; */
 }
 .skills {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,6 +41,7 @@ body {
   border-radius: 12px;
   position: relative;
   overflow: hidden;
+ 
 }
 .my-node-enter {
   opacity: 0;

@@ -15,6 +15,10 @@
   background: green;
   padding: 2.5%;
   z-index: 10;
+  transition: 0.1s ease-in-out;
+}
+.chat:hover{
+  transform: scale(1.1);
 }
 .chat a {
   text-decoration: none;
