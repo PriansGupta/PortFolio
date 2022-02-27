@@ -4,12 +4,6 @@ import "./method.css";
 
 const Method = () => {
   const ContactMethodData = [
-    // {
-    //   name: "call",
-    //   method: "Call me",
-    //   address: "8423364688",
-    //   id: 1,
-    // },
     {
       name: "mail",
       method: "Email",
@@ -19,7 +13,7 @@ const Method = () => {
     {
       name: "location",
       method: "Location",
-      address: "Kanpur,Uttar Pradesh",
+      address: "Kanpur,Uttar Pradesh-208002",
       id: 3,
     },
   ];

@@ -10,10 +10,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid green; */
   cursor: pointer;
   z-index: 10;
-  /* transition: 0.1s ease-in-out; */
   transition: 0.1s ease-in-out;
 }
 .arrowup:hover {
@@ -22,15 +20,10 @@
 .arrowup a {
   text-decoration: none;
   list-style: none;
-  /* transform: translateY(5px); */
   font-size: 30px;
-  /* border: 2px solid green; */
   color: red;
 }
-/* .Down{
-  transform: translateY(30px);
-} */
-@media all and (min-width: 200px) and (max-width: 350px) {
+@media all and (min-width: 200px) and (max-width: 450px) {
   .arrowup {
     bottom: 13%;
     right: 3%;
@@ -39,12 +32,13 @@
     height: 2.5em;
   }
 }
-@media all and (min-width: 351px) and (max-width: 450px) {
+@media all and (min-width: 451px) and (max-width: 550px) {
   .arrowup {
     bottom: 13%;
-    right: 3%;
-    font-size: 100%;
-    width: 2.5em;
-    height: 2.5em;
+  }
+}
+@media all and (min-width: 551px) and (max-width: 650px) {
+  .arrowup {
+    bottom: 17%;
   }
 }

@@ -4,7 +4,6 @@
   color: white;
   font-weight: 800;
   text-transform: capitalize;
-  /* border: 2px solid green; */
   font-family: "Mochiy Pop P One", sans-serif;
 }
 @media all and (min-width: 200px) and (max-width: 350px) {
@@ -13,6 +12,11 @@
 }
 }
 @media all and (min-width: 351px) and (max-width: 450px) {
+.end{
+  font-size: 8px;
+}
+}
+@media all and (min-width: 451px) and (max-width: 650px) {
 .end{
   font-size: 8px;
 }

@@ -15,7 +15,6 @@
 .skill_name {
   width: 100%;
   height: 20%;
-  /* color:  #ccb0f8; */
   border: 2px solid rgb(255, 103, 47);
   text-align: center;
   display: flex;
@@ -27,8 +26,8 @@
   margin: 0;
   padding: 0%;
   font-family: "Bebas Neue", cursive;
-  letter-spacing: 5px;
-  font-size: 25px;
+  letter-spacing: 3px;
+  font-size: 16px;
 }
 .Image_details {
   width: 100%;
@@ -41,13 +40,9 @@
   padding: 5%;
   transition: 0.5s ease-in-out;
   border-radius: 18px 18px 0px 0px;
-  /* background-image: url("../../Assets/html.png") ; */
   background-size: cover;
   overflow: hidden;
 }
-/* .backhover {
-  background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
-} */
 .skill_image {
   z-index: 10;
   width: 40%;
@@ -112,7 +107,6 @@
   }
 }
 .closeDt {
-  /* animation: Close 0.1s ease-in-out forwards; */
   display: none;
 }
 @keyframes Close {
@@ -135,15 +129,12 @@
 @keyframes OpenImg {
   0% {
     opacity: 0;
-    /* transform: translateX(-100%); */
   }
   50% {
     opacity: 1;
-    /* transform: translateX(20%); */
   }
   100% {
     opacity: 1;
-    /* transform: translateX(0%); */
   }
 }
 .closeImg {
@@ -152,21 +143,18 @@
 @keyframes CloseImg {
   0% {
     opacity: 1;
-    /* transform: translateX(0%); */
   }
   50% {
     opacity: 0.8;
-    /* transform: translateX(60%); */
   }
   100% {
     opacity: 0;
-    /* transform: translateX(-100%); */
   }
 }
 @media all and (min-width: 200px) and (max-width: 350px) {
   .skill_card_holder {
-    height: 138px;
-    width: 140px;
+    height: 102px;
+    width: 95px;
   }
   .skill_image {
     width: 45%;
@@ -175,17 +163,35 @@
     height: 24%;
   }
   .skill_name h2 {
-    font-size: 16px;
+    font-size: 10px;
   }
   .SkillInfo_data p {
-    font: 800;
-    font-size: 8px;
+    font-size: 6px;
   }
 }
 @media all and (min-width: 351px) and (max-width: 450px) {
   .skill_card_holder {
     height: 138px;
     width: 140px;
+  }
+  .skill_image {
+    width: 45%;
+  }
+  .SkillInfo_data p {
+    font: 800;
+    font-size: 8px;
+  }
+  .skill_name {
+    height: 24%;
+  }
+  .skill_name h2 {
+    font-size: 16px;
+  }
+}
+@media all and (min-width: 451px) and (max-width: 650px) {
+  .skill_card_holder {
+    height: 150px;
+    width: 165px;
   }
   .skill_image {
     width: 45%;

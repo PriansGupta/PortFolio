@@ -10,11 +10,13 @@
   box-shadow: -20px 20px 20px rgba(60, 60, 150, 0.25);
   border-radius: 6%;
   padding: 1%;
-  /* border: 2px solid green; */
   height: 50%;
 }
+.tiltintro {
+  cursor: pointer;
+  z-index: 1000;
+}
 .Intro {
-  /* border: 2px solid green; */
   max-width: fit-content;
   z-index: 1;
   padding: 1%;
@@ -25,7 +27,6 @@
 }
 .line_1 {
   font-size: 55px;
-  /* border: 2px solid green; */
   z-index: 1;
   letter-spacing: 6px;
   line-height: 50%;
@@ -37,14 +38,12 @@
   font-size: 30px;
   letter-spacing: 3px;
   z-index: 1;
-  /* border: 2px solid green; */
   line-height: 25px;
   font-weight: lighter;
 }
 .line_3 {
   z-index: 1;
   color: white;
-  /* border: 2px solid green; */
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 2px;
@@ -55,7 +54,6 @@
   font-size: 20px;
   z-index: 1;
   line-height: 25px;
-  /* border: 2px solid green; */
   letter-spacing: 2px;
   font-weight: bolder;
 }
@@ -113,6 +111,40 @@
   }
   .line_1 {
     margin: 3px;
+    font-size: 45px;
+    letter-spacing: 6px;
+    line-height: 111%;
+}
+  .Intro {
+    width: 100%;
+  }
+  .Main_page {
+    width: 93%;
+    top: 35%;
+    left: 5%;
+    height: 52%;
+}
+}
+@media all and (min-width: 451px) and (max-width: 550px) {
+  .line_4 {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 2px;
+  }
+  .line_3 {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 2px;
+    letter-spacing: 2px;
+  }
+  .line_2 {
+    font-size: 20px;
+    margin: 2px;
+    letter-spacing: 2px;
+    line-height: 25px;
+  }
+  .line_1 {
+    margin: 3px;
     font-size: 32px;
     letter-spacing: 9px;
     line-height: 111%;
@@ -125,5 +157,51 @@
     top: 28%;
     left: 5%;
     height: 44%;
+  }
+}
+@media all and (min-width: 551px) and (max-width: 650px) {
+  .line_4 {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 2px;
+  }
+  .line_3 {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 2px;
+    letter-spacing: 2px;
+  }
+  .line_2 {
+    font-size: 20px;
+    margin: 2px;
+    letter-spacing: 2px;
+    line-height: 25px;
+  }
+  .line_1 {
+    margin: 3px;
+    font-size: 32px;
+    letter-spacing: 9px;
+    line-height: 111%;
+  }
+  .Intro {
+    width: 100%;
+  }
+  .Main_page {
+    width: 90%;
+    top: 28%;
+    left: 5%;
+    height: 44%;
+  }
+}
+@media all and (min-width: 651px) and (max-width: 750px) {
+  .Main_page {
+    width: 90%;
+    left: 5%;
+  }
+}
+@media all and (min-width: 751px) and (max-width: 900px) {
+  .Main_page {
+    width: 90%;
+    left: 5%;
   }
 }

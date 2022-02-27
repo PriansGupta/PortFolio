@@ -8,14 +8,11 @@
   justify-content: center;
   cursor: pointer;
   transition: 0.5s;
-  /* border: 2px solid; */
-  /* border: 2px solid green; */
   z-index: 100;
 }
 .dec {
   list-style: none;
   text-decoration: none;
-  /* border: 2px solid green; */
   color: black;
 }
 .triangle {
@@ -23,7 +20,6 @@
   width: 34px;
   height: 34px;
   background: #5ed9bc;
-  /* border: 2px solid green; */
   margin-top: 20px;
   margin-left: -7px;
 }
@@ -31,14 +27,11 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  /* border: 2px solid green; */
   justify-content: space-evenly;
   z-index: 100;
 }
 .logo_name {
   font-size: 30px;
-  /* border: 2px solid green; */
-  /* font-weight: bolder; */
   font-family: "Abril Fatface";
   letter-spacing: 10px;
 }
@@ -69,7 +62,7 @@
     left: 22%;
     width: 53%;
     height: 9%;
-    margin-top: 6%;
+    margin-top: 2%;
     padding: 0;
   }
 
@@ -109,11 +102,11 @@
 }
 @media all and (min-width: 351px) and (max-width: 450px) {
   .logo_container {
-    position: fixed;
-    left: 22%;
-    width: 53%;
-    height: 9%;
-    margin-top: 6%;
+    position: absolute;
+    left: 25%;
+    width: 42%;
+    bottom: 35%;
+    height: 6%;
     padding: 0;
   }
 
@@ -130,7 +123,7 @@
     position: relative;
     bottom: 0%;
     top: -12%;
-    left: 16%;
+    left: 13%;
     height: 30px;
     width: 30px;
   }
@@ -149,5 +142,88 @@
     height: 24px;
     margin-top: 1px;
     position: relative;
+  }
+}
+@media all and (min-width: 451px) and (max-width: 650px) {
+  .logo_container {
+    position: fixed;
+    left: 22%;
+    width: 53%;
+    height: 9%;
+    margin-top: 5%;
+    padding: 0;
+  }
+
+  .display {
+    display: none;
+  }
+  .displayPhone {
+    display: flex;
+  }
+  .Slide {
+    transform: translateY(100px);
+  }
+  .circle {
+    position: relative;
+    bottom: 0%;
+    top: -12%;
+    left: 13%;
+    height: 30px;
+    width: 30px;
+  }
+  .name {
+    position: relative;
+    bottom: 18%;
+    height: fit-content;
+  }
+  .logo_name {
+    font-size: 26px;
+    letter-spacing: 5px;
+    margin: 0%;
+  }
+  .triangle {
+    width: 22px;
+    height: 24px;
+    margin-top: 5px;
+    position: relative;
+  }
+}
+@media all and (min-width: 551px) and (max-width: 650px) {
+  .logo_container {
+    margin-top: 4%;
+    padding: 0;
+  }
+  .circle {
+    left: 11%;
+  }
+}
+@media all and (min-width: 651px) and (max-width: 750px) {
+  .logo_container {
+    margin-top: 3%;
+    left: 9%;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  .circle {
+    left: -10%;
+    top: 18%;
+  }
+  .shift {
+    transform: translateX(0);
+  }
+}
+@media all and (min-width: 751px) and (max-width: 900px) {
+  .logo_container {
+    margin-top: 3%;
+    left: 9%;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  .circle {
+    left: -10%;
+    top: 18%;
+  }
+  .shift {
+    transform: translateX(0);
   }
 }

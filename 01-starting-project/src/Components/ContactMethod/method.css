@@ -3,22 +3,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   border-radius: 5%;
-  /* border: 2px solid green; */
 }
 .details_cnt {
   height: fit-content;
-  /* border: 2px solid green; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .address {
-  /* border: 2px solid green; */
   color: #848484;
-  font-size: 19px;
-  font-family: "Bebas Neue", cursive;
+  font-size: 15px;
+  text-transform: lowercase;
   letter-spacing: 2px;
   padding: 0%;
 }
@@ -26,65 +23,51 @@
   font-size: 22px;
   font-family: "Bebas Neue", cursive;
   padding: 5%;
-  /* border: 2px solid green; */
 }
 .icon {
-  /* padding: 10px; */
-  /* border: 2px solid green; */
   font-size: 2.5em;
+  margin-left: 0;
 }
-.method_holder{
+.method_holder {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: left;
 }
 
-@media all and (min-width: 200px) and (max-width: 450px) {
+@media all and (min-width: 200px) and (max-width: 650px) {
   .method {
     width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 1px 1px 1px 1px gray; */
     border-radius: 5%;
-    /* border: 2px solid green; */
-    /* margin-top: 4%; */
   }
   .details_cnt {
     height: fit-content;
-    /* border: 2px solid green; */
-    /* padding: 4px; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .address {
-    /* border: 2px solid green; */
     color: #848484;
-    font-size: 19px;
-    font-family: "Bebas Neue", cursive;
+    font-size: 11px;
     letter-spacing: 2px;
     padding: 0%;
-    /* margin-top: 13%; */
   }
   .name {
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Bebas Neue", cursive;
-    padding: 5%;
-    /* border: 2px solid green; */
+    padding: 3%;
   }
   .icon {
-    /* padding: 10px; */
-    /* border: 2px solid green; */
     font-size: 2.5em;
   }
-  .method_holder{
+  .method_holder {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  
 }

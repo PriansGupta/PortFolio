@@ -13,7 +13,7 @@ const Skill = () => {
       level: "90%",
       color: "rgb(255, 103, 47)",
       bgColor: "rgb(251, 219, 207)",
-      key: "1_Html",
+      id: "1_Html",
     },
     {
       Name: "CSS",
@@ -22,7 +22,7 @@ const Skill = () => {
       level: "85%",
       color: "#9ac0fc",
       bgColor: "#9ac0fc",
-      key: "2_css",
+      id: "2_css",
     },
     {
       Name: "JavaScript",
@@ -31,7 +31,7 @@ const Skill = () => {
       level: "80%",
       color: "#F0DB4F",
       bgColor: "#F0DB4F",
-      key: "3_js",
+      id: "3_js",
     },
     {
       Name: "ReactJS",
@@ -40,7 +40,7 @@ const Skill = () => {
       level: "80%",
       color: "#61DBFB",
       bgColor: "#61DBFB",
-      key: "4_react",
+      id: "4_react",
     },
     {
       Name: "JSX",
@@ -49,7 +49,7 @@ const Skill = () => {
       level: "80%",
       color: "#F0DB4F",
       bgColor: "#F0DB4F",
-      key: "5_jsx",
+      id: "5_jsx",
     },
     {
       Name: "Redux",
@@ -58,7 +58,7 @@ const Skill = () => {
       level: "80%",
       color: "#ccb0f8",
       bgColor: "#ccb0f8",
-      key: "6_redux",
+      id: "6_redux",
     },
     {
       Name: "Router",
@@ -67,7 +67,7 @@ const Skill = () => {
       level: "80%",
       color: "#9c9789",
       bgColor: "#9c9789",
-      key: "7_router",
+      id: "7_router",
     },
     {
       Name: "MATERIAL UI",
@@ -76,7 +76,7 @@ const Skill = () => {
       level: "80%",
       color: "#03fca5",
       bgColor: "#03fca5F",
-      key: "8_mui",
+      id: "8_mui",
     },
     {
       Name: "Adobe xd",
@@ -85,7 +85,7 @@ const Skill = () => {
       level: "60%",
       color: "#7f7f7f",
       bgColor: "#7f7f7f",
-      key: "9_adobexd",
+      id: "9_adobexd",
     },
     {
       Name: "C++",
@@ -94,7 +94,7 @@ const Skill = () => {
       level: "90%",
       color: "#5E97D0",
       bgColor: "#5E97D0",
-      key: "10_c++",
+      id: "10_c++",
     },
     {
       Name: "Java",
@@ -103,7 +103,7 @@ const Skill = () => {
       level: "50%",
       color: "#D0A384",
       bgColor: "#0474BB",
-      key: "8_java",
+      id: "8_java",
     },
   ];
   const scale = 1.1;
@@ -114,7 +114,7 @@ const Skill = () => {
         {SkillData.map((x) => (
           <Tilt scale={scale} transitionSpeed={2500}>
             <SkillCard
-              key={x.key}
+              key={x.id}
               Name={x.Name}
               ImgName={x.ImgName}
               info={x.info}
@@ -122,7 +122,7 @@ const Skill = () => {
               color={x.color}
               bgColor={x.bgColor}
             ></SkillCard>
-          </Tilt>
+           </Tilt>
         ))}
       </div>
     </Fragment>

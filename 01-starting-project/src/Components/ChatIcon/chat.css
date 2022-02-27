@@ -4,18 +4,17 @@
   left: 2%;
   border-radius: 50%;
   box-shadow: 1px 1px 1px 1px white;
-  /* border: 2px solid yellow; */
   width: 3.5em;
   height: 3.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid green; */
   cursor: pointer;
   background: green;
   padding: 2.5%;
   z-index: 10;
   transition: 0.1s ease-in-out;
+  outline: none;
 }
 .chat:hover{
   transform: scale(1.1);
@@ -25,13 +24,9 @@
   list-style: none;
   transform: translateY(5px);
   font-size: 40px;
-  /* border: 2px solid green; */
   color: white;
 }
-/* .Down{
-  transform: translateY(30px);
-} */
-@media all and (min-width: 200px) and (max-width: 350px) {
+@media all and (min-width: 200px) and (max-width: 450px) {
   .chat {
     bottom: 13%;
     left: 3%;
@@ -42,14 +37,13 @@
     font-size: 30px;
   }
 }
-@media all and (min-width: 351px) and (max-width: 450px) {
+@media all and (min-width: 451px) and (max-width: 550px) {
   .chat {
-    bottom: 13%;
-    left: 3%;
-    width: 2.5em;
-    height: 2.5em;
+    bottom: 17%;
   }
-  .chat a {
-    font-size: 30px;
+}
+@media all and (min-width: 551px) and (max-width: 650px) {
+  .chat {
+    bottom: 17%;
   }
 }

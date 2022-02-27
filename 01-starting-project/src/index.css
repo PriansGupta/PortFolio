@@ -8,7 +8,7 @@ html {
   font-family: "Noto Sans JP", sans-serif;
   scroll-behavior: smooth;
 }
-/* 303438 */
+
 body {
   margin: 0;
   background-color: white;
@@ -25,7 +25,6 @@ body {
   background-position-x: 200px;
   background-position-y: 20px;
   z-index: -20;
-  /* border: 2px solid green; */
 }
 .skills {
   width: 100%;
@@ -35,13 +34,12 @@ body {
   align-items: center;
   margin-bottom: 50px;
   height: 300px;
-  /* border: 2px solid green; */
   height: fit-content;
   box-shadow: 20px 20px 40px 20px rgba(60, 60, 150, 0.25);
   border-radius: 12px;
   position: relative;
   overflow: hidden;
- 
+ padding: 3%;
 }
 .my-node-enter {
   opacity: 0;
@@ -62,12 +60,10 @@ body {
   text-align: center;
   padding: 0;
   margin: 0%;
-  /* border: 2px solid green; */
   font-family: "Abril Fatface";
 }
 .about_me {
   display: flex;
-  /* border: 2px solid green; */
   flex-direction: row-reverse;
   width: 100%;
   height: 600px;
@@ -82,13 +78,11 @@ body {
   font-family: "Abril Fatface";
   font-size: 4rem;
   height: fit-content;
-  /* border: 2px solid green; */
   z-index: 1;
   color: rgb(157, 255, 0);
   letter-spacing: 2px;
 }
 .contact_me {
-  /* border: 2px solid green; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +91,6 @@ body {
 .footer {
   margin-top: 5px;
   z-index: -20;
-  /* border: 2px solid green; */
   width: 100%;
   height: 50px;
   background: rgb(44, 44, 44);
@@ -109,7 +102,6 @@ body {
 .lower_foot {
   width: 100%;
   height: 50px;
-  /* border: 2px solid green; */
   background: #60dce5;
   bottom: 0;
 }
@@ -140,7 +132,7 @@ body {
   .skills {
     width: 100%;
     height: fit-content;
-    /* border: 2px solid green; */
+
     margin-top: 0%;
   }
   .about_me {
@@ -165,10 +157,10 @@ body {
     background-position-x: -112px;
   }
 }
-@media all and (min-width: 351px) and (max-width: 450px) {
+@media all and (min-width: 351px) and (max-width: 650px) {
   .Intro_sec {
     width: 100%;
-    height: 420px;
+    height: 360px;
     background-image: url("./Assets/Intro_BackG.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -181,7 +173,7 @@ body {
   .skills {
     width: 100%;
     height: fit-content;
-    /* border: 2px solid green; */
+
     margin-top: 0%;
   }
   .about_me {
@@ -206,3 +198,22 @@ body {
     background-position-x: -112px;
   }
 }
+@media all and (min-width: 651px) and (max-width: 750px) {
+  .about_me {
+  flex-direction: column;
+}
+.about_heading {
+  font-size: 3rem;
+  margin: 0;
+}
+  }
+@media all and (min-width: 751px) and (max-width: 900px) {
+  .about_me {
+  flex-direction: column;
+}
+.about_heading {
+  font-size: 3rem;
+  margin: 0px;
+  transform: translateY(10px);
+}
+  }

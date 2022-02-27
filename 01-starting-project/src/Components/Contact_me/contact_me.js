@@ -17,8 +17,7 @@ const CheckEmailIsValid = (value) => {
 
 const ContactMe = () => {
   const [display, SetDisplay] = useState(false);
-  const [Error, SetError] = useState(false);
-  const [hoverState, SetHoverState] = useState(false);
+  const [Error, SetError] = useState(null);
 
   const MessageHandler = () => {
     setTimeout(() => {
@@ -62,23 +61,24 @@ const ContactMe = () => {
   ];
 
   const SendData = (Data) => {
-    const requestOptions = {
-      method: "POST",
-      body: JSON.stringify(Data),
-    };
-    fetch(
-      "https://prians-9c7e3-default-rtdb.firebaseio.com/data.json",
-      requestOptions
-    )
-      .then(async (response) => {
-        if (!response.ok) {
+    setTimeout(() => {
+      const requestOptions = {
+        method: "POST",
+        body: JSON.stringify(Data),
+      };
+      fetch(
+        "https://prians-9c7e3-default-rtdb.firebaseio.com/data.json",
+        requestOptions
+      )
+        .then(async (response) => {
+          if (!response.ok) {
+            SetError(true);
+          }
+        })
+        .catch((error) => {
           SetError(true);
-        }
-      })
-      .catch((error) => {
-        console.error("There was an error!", error);
-        SetError(true);
-      });
+        });
+    }, 1000);
   };
 
   const FormSubmitHandler = (event) => {
@@ -86,15 +86,10 @@ const ContactMe = () => {
     resetInputName();
     resetInputEmail();
     resetInputMsg();
-    SendData(UserData);
     MessageHandler();
+    SendData(UserData);
   };
-  const HoverEnter = () => {
-    SetHoverState(true);
-  };
-  const HoverLeave = () => {
-    SetHoverState(false);
-  };
+
   let FormIsValid = false;
 
   if (nameIsValid && EmailIsValid && MsgIsValid) FormIsValid = true;
@@ -139,7 +134,7 @@ const ContactMe = () => {
                 className={`email_ip ${
                   !EmailInputHasError ? "noError" : "error"
                 }`}
-                placeholder="EMAIL"
+                placeholder="abc@xyyz"
                 onChange={EmailChangedHandler}
                 value={enteredEmail}
                 onBlur={EmailBlurHandler}

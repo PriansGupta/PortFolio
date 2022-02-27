@@ -10,7 +10,6 @@
   position: fixed;
   z-index: 100;
   background: white;
-  /* border: 2px solid green; */
   transition: 0.3s ease;
 }
 .back_link {
@@ -20,7 +19,6 @@
   display: flex;
   width: 60px;
   height: 60px;
-  /* border: 2px solid; */
   justify-content: center;
   margin: 42px;
   align-items: center;
@@ -35,9 +33,6 @@
 .heightDec {
   height: 20%;
 }
-/* .down {
-  display: none;
-} */
 @media all and (min-width: 200px) and (max-width: 350px) {
   .Header {
     height: 12%;
@@ -48,14 +43,14 @@
   .back_link {
     width: 40px;
     height: 40px;
-    /* border: 2px solid; */
+
     justify-content: center;
     margin: 7px;
   }
 }
 @media all and (min-width: 351px) and (max-width: 450px) {
   .Header {
-    height: 12%;
+    height: 7%;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
     bottom: 0%;
@@ -63,7 +58,37 @@
   .back_link {
     width: 40px;
     height: 40px;
-    /* border: 2px solid; */
+
+    justify-content: center;
+    margin: 7px;
+  }
+}
+@media all and (min-width: 451px) and (max-width: 550px) {
+  .Header {
+    height: 13.5%;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    bottom: 0%;
+  }
+  .back_link {
+    width: 40px;
+    height: 40px;
+
+    justify-content: center;
+    margin: 7px;
+  }
+}
+@media all and (min-width: 551px) and (max-width: 650px) {
+  .Header {
+    height: 13.5%;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    bottom: 0%;
+  }
+  .back_link {
+    width: 40px;
+    height: 40px;
+
     justify-content: center;
     margin: 7px;
   }

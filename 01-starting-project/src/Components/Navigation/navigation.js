@@ -7,7 +7,6 @@ import Thanks from "../ThankModal/Thanks";
 
 const Navigation = (props) => {
   let CurrPath = window.location.pathname;
-  console.log(CurrPath);
   const [selected, OptionsChangeHandler] = useState(1);
   const [slider, SliderHandler] = useState(false);
   const [display, SetDisplay] = useState(false);
@@ -39,7 +38,7 @@ const Navigation = (props) => {
     MessageHandler();
     OptionsChangeHandler(4);
   };
-  console.log(props.scrollDet);
+
   useEffect(() => {
     if (props.scrollDet < 380) OptionsChangeHandler(1);
   }, [props.scrollDet]);
@@ -63,8 +62,8 @@ const Navigation = (props) => {
       <Transition in={display} timeout={400} mountOnEnter unmountOnExit>
         {(state) => (
           <Thanks
-            color="orange"
-            icon="cube"
+            color="grey"
+            icon="ribbon"
             text="Projects will be listed Soon."
             onClose={DisplayChanger}
             display={state}

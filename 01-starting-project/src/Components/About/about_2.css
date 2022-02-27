@@ -16,13 +16,11 @@ h6 {
   line-height: 100%;
   font-family: "Dancing Script", cursive;
   letter-spacing: 2px;
-  /* background-color: rgb(195, 195, 195); */
   box-shadow: -1px 1px 1px 1px gray;
   z-index: 2000;
   color: rgb(44, 44, 44);
   padding: 2%;
   border-radius: 5%;
-  /* border: 2px solid green; */
 }
 .card-container a {
   list-style: none;
@@ -32,12 +30,11 @@ h6 {
 }
 
 .card-container {
-  /* border: 2px solid green; */
   background-color: white;
   border-radius: 5%;
   box-shadow: 0px 10px 20px -30px rgba(0, 0, 0, 0.75);
   color: #b3b8cd;
-  width: 100%;
+  width: 35%;
   text-align: center;
   padding: 3%;
   display: flex;
@@ -49,7 +46,6 @@ h6 {
 }
 
 .card-container .round {
-  /* border: 2px solid green; */
   border: 1px solid #03bfcb;
   border-radius: 50%;
   padding: 7px;
@@ -67,7 +63,6 @@ h6 {
 }
 .know_more.over {
   background-color: white;
-  /* display: none; */
   border: 2px solid #03bfcb;
   color: #03bfcb;
 }
@@ -88,7 +83,6 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* border: 2px solid green; */
   align-items: center;
   cursor: pointer;
   z-index: 2000;
@@ -100,7 +94,6 @@ h6 {
   transform: translateY(2px);
   font-size: 25px;
   cursor: pointer;
-  /* border: 2px solid green; */
   z-index: 2000;
 }
 .know_more .side_arrow a {
@@ -114,7 +107,7 @@ h6 {
   transition: 0.3s ease-in-out;
 }
 
-@media all and (min-width: 200px) and (max-width: 350px) {
+@media all and (min-width: 200px) and (max-width: 550px) {
   .card-container {
     width: 90%;
     left: 5%;
@@ -140,8 +133,7 @@ h6 {
     color: white;
   }
 }
-
-@media all and (min-width: 351px) and (max-width: 450px) {
+@media all and (min-width: 551px) and (max-width: 650px) {
   .card-container {
     width: 90%;
     left: 5%;
@@ -151,7 +143,7 @@ h6 {
     width: 100%;
   }
   .card-container .round {
-    width: 30%;
+    width: 23%;
     background-color: transparent;
   }
   .intro_me {
@@ -166,4 +158,35 @@ h6 {
   h6 {
     color: white;
   }
+}
+@media all and (min-width: 651px) and (max-width: 750px) {
+  .card-container {
+    background-color: transparent;
+    width: 76%;
+}
+.card-container .round {
+  width: 28%;
+}
+h6 {
+  margin: 2% 0;
+  text-transform: uppercase;
+  color: #373737;
+}
+}
+@media all and (min-width: 751px) and (max-width: 900px) {
+  .card-container {
+    background-color: transparent;
+    width: 76%;
+}
+.card-container .round {
+  width: 28%;
+}
+h6 {
+  margin: 2% 0;
+  text-transform: uppercase;
+  color: #373737;
+}
+.intro_me {
+  font-size: 25px;
+}
 }
