@@ -120,9 +120,12 @@
   }
   .Main_page {
     width: 93%;
-    top: 35%;
+    top: 23%;
     left: 5%;
     height: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 }
 @media all and (min-width: 451px) and (max-width: 550px) {

@@ -40,16 +40,16 @@ const Navigation = (props) => {
   };
 
   useEffect(() => {
-    if (props.scrollDet < 380) OptionsChangeHandler(1);
+    if (props.scrollDet < 320) OptionsChangeHandler(1);
   }, [props.scrollDet]);
 
   useEffect(() => {
-    if (props.scrollDet > 400 && props.scrollDet < 1150)
+    if (props.scrollDet > 320 && props.scrollDet < 1000)
       OptionsChangeHandler(2);
   }, [props.scrollDet]);
 
   useEffect(() => {
-    if (props.scrollDet > 1150 && props.scrollDet < 1600)
+    if (props.scrollDet > 1000 && props.scrollDet < 1600)
       OptionsChangeHandler(3);
   }, [props.scrollDet]);
   useEffect(() => {
