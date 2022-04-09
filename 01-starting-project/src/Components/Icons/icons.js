@@ -12,7 +12,7 @@ const Icons = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://www.linkedin.com/in/priyansh-gupta-5039241a0"
+              href="https://www.linkedin.com/in/priyansh-g-5039241a0/"
               className="link"
             >
               <ion-icon name="logo-linkedin"></ion-icon>
