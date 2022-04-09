@@ -67,7 +67,7 @@ const ContactMe = () => {
         body: JSON.stringify(Data),
       };
       fetch(
-        "https://prians-9c7e3-default-rtdb.firebaseio.com/data.json",
+        "https://database-65427-default-rtdb.firebaseio.com/data.json",
         requestOptions
       )
         .then(async (response) => {
