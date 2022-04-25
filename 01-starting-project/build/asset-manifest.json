@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.693f3214.chunk.css",
-    "main.js": "/static/js/main.519e2ee3.chunk.js",
-    "main.js.map": "/static/js/main.519e2ee3.chunk.js.map",
+    "main.js": "/static/js/main.fcbfbbdb.chunk.js",
+    "main.js.map": "/static/js/main.fcbfbbdb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d935bac7.js",
     "runtime-main.js.map": "/static/js/runtime-main.d935bac7.js.map",
     "static/js/2.5fb20faf.chunk.js": "/static/js/2.5fb20faf.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/2.5fb20faf.chunk.js.LICENSE.txt": "/static/js/2.5fb20faf.chunk.js.LICENSE.txt",
     "static/media/Adobe.866afe70.png": "/static/media/Adobe.866afe70.png",
     "static/media/index.css": "/static/media/Web.816d3223.jpg",
-    "static/media/Priyansh_Gupta.a0454651.pdf": "/static/media/Priyansh_Gupta.a0454651.pdf",
+    "static/media/Priyansh_Gupta.d96b043c.pdf": "/static/media/Priyansh_Gupta.d96b043c.pdf",
     "static/media/User_Prians.7c34bdbd.png": "/static/media/User_Prians.7c34bdbd.png",
     "static/media/c.c417f91d.png": "/static/media/c.c417f91d.png",
     "static/media/css3.d5935ac6.png": "/static/media/css3.d5935ac6.png",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.d935bac7.js",
     "static/js/2.5fb20faf.chunk.js",
     "static/css/main.693f3214.chunk.css",
-    "static/js/main.519e2ee3.chunk.js"
+    "static/js/main.fcbfbbdb.chunk.js"
   ]
 }
