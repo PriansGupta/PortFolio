@@ -13,6 +13,10 @@ import JSX from "../../Assets/jsx.png";
 import MUI from "../../Assets/mui.png";
 import Redux from "../../Assets/redux.png";
 import Router from "../../Assets/router.png";
+import node from "../../Assets/node.png";
+import express from "../../Assets/express.png";
+import mongo from "../../Assets/mongo.png";
+
 
 
 const SkillCard = (props) => {
@@ -36,6 +40,9 @@ const SkillCard = (props) => {
   else if (props.ImgName === "mui") Image = MUI;
   else if (props.ImgName === "redux") Image = Redux;
   else if (props.ImgName === "router") Image = Router;
+  else if (props.ImgName === "node") Image = node;
+  else if (props.ImgName === "express") Image = express;
+  else if (props.ImgName === "mongo") Image = mongo;
 
   const HoverSkill = (props) => {
     return (

@@ -61,13 +61,40 @@ const Skill = () => {
       id: "6_redux",
     },
     {
+      Name: "NodeJs",
+      ImgName: "node",
+      info: "As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.",
+      level: "50%",
+      color: "#3C873A",
+      bgColor: "#0474BB",
+      id: "7_nodejs",
+    },
+    {
+      Name: "Express Js",
+      ImgName: "express",
+      info: "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+      level: "50%",
+      color: "#acacac",
+      bgColor: "#0474BB",
+      id: "8_express",
+    },
+    {
+      Name: "MongoDB",
+      ImgName: "mongo",
+      info: "MongoDB is an open source NoSQL database management program.",
+      level: "50%",
+      color: "#4db33d",
+      bgColor: "#0474BB",
+      id: "9_mongoDB",
+    },
+    {
       Name: "Router",
       ImgName: "router",
       info: "React Router is the standard routing library for React. From the docs: “React Router keeps your UI in sync with the URL",
       level: "80%",
       color: "#9c9789",
       bgColor: "#9c9789",
-      id: "7_router",
+      id: "9_router",
     },
     {
       Name: "MATERIAL UI",
@@ -76,7 +103,7 @@ const Skill = () => {
       level: "80%",
       color: "#03fca5",
       bgColor: "#03fca5F",
-      id: "8_mui",
+      id: "10_mui",
     },
     {
       Name: "Adobe xd",
@@ -85,7 +112,7 @@ const Skill = () => {
       level: "60%",
       color: "#7f7f7f",
       bgColor: "#7f7f7f",
-      id: "9_adobexd",
+      id: "11_adobexd",
     },
     {
       Name: "C++",
@@ -94,7 +121,7 @@ const Skill = () => {
       level: "90%",
       color: "#5E97D0",
       bgColor: "#5E97D0",
-      id: "10_c++",
+      id: "12_c++",
     },
     {
       Name: "Java",
@@ -103,8 +130,9 @@ const Skill = () => {
       level: "50%",
       color: "#D0A384",
       bgColor: "#0474BB",
-      id: "8_java",
+      id: "13_java",
     },
+   
   ];
   const scale = 1.1;
 
@@ -122,7 +150,7 @@ const Skill = () => {
               color={x.color}
               bgColor={x.bgColor}
             ></SkillCard>
-           </Tilt>
+          </Tilt>
         ))}
       </div>
     </Fragment>
