@@ -39,7 +39,7 @@ body {
   border-radius: 12px;
   position: relative;
   overflow: hidden;
- padding: 3%;
+  padding: 3%;
 }
 .my-node-enter {
   opacity: 0;
@@ -200,20 +200,29 @@ body {
 }
 @media all and (min-width: 651px) and (max-width: 750px) {
   .about_me {
-  flex-direction: column;
-}
-.about_heading {
-  font-size: 3rem;
-  margin: 0;
-}
+    flex-direction: column;
   }
+  .about_heading {
+    font-size: 3rem;
+    margin: 0;
+  }
+}
 @media all and (min-width: 751px) and (max-width: 900px) {
   .about_me {
-  flex-direction: column;
-}
-.about_heading {
-  font-size: 3rem;
-  margin: 0px;
-  transform: translateY(10px);
-}
+    flex-direction: column;
   }
+  .about_heading {
+    font-size: 3rem;
+    margin: 0px;
+    transform: translateY(10px);
+  }
+}
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #60dce5;
+}
