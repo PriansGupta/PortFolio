@@ -18,7 +18,7 @@ const About = () => {
       <div className="card-container">
         <img className="round" src={User} alt="user" />
         <h3>Priyansh Gupta</h3>
-        <strong>2nd Year B.Tech HBTU</strong>
+        <strong>3rd Year B.Tech HBTU</strong>
         <h6>Kanpur, Uttar Pradesh</h6>
         <p className="intro_me">
           "I am a positive, enthusiastic and competent Web Developer who, over

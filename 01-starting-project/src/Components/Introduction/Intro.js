@@ -8,7 +8,14 @@ const Introduction = () => {
       <div className="Main_page">
         <div className="Intro">
           <h1 className="line_1">
-            <ReactTypingEffect text={["I'm Priyansh"]} />
+            <ReactTypingEffect
+              text={["I'm Priyansh"]}
+              typingDelay={500}
+              speed={100}
+              eraseSpeed={300}
+              eraseDelay={1000}
+              cursor={"_"}
+            />
           </h1>
           <h3 className="line_2">Full Stack Webdeveloper</h3>
           <p className="line_3">UI/UX , Interactive Interface</p>
