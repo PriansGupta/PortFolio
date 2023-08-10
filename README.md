@@ -1,4 +1,4 @@
-HERE is the live link https://prians-9c7e3.web.app/
+HERE is the live link https://prians.netlify.app
 
 # Getting Started with Create React App
 
