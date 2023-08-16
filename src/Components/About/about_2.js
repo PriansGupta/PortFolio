@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Resume from "../../Assets/Priyansh_Gupta.pdf";
+import Resume from "../../Assets/Priyansh_Gupta_CV.pdf";
 import { Fragment } from "react/cjs/react.production.min";
 import User from "../../Assets/User_Prians.png";
 import "./about_2.css";
